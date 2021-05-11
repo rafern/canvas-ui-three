@@ -126,6 +126,10 @@ export class RayPointerDriver implements Driver {
             // Translate to canvas coordinates
             const [width, height] = root.dimensions;
             const uv = intersection[0].uv;
+
+            if(typeof uv === 'undefined')
+                continue;
+
             const x = uv.x * width;
             const y = (1 - uv.y) * height;
 
