@@ -108,7 +108,9 @@ export class RayPointerDriver implements Driver {
 
             // Setup raycaster
             const rayDirection = new Vector3(0, 0, -1).applyQuaternion(controller.quaternion);
-            this.raycaster.ray = new Ray(controller.position, rayDirection);
+            const rayOrigin = new Vector3();
+            controller.getWorldPosition(rayOrigin);
+            this.raycaster.ray = new Ray(rayOrigin, rayDirection);
 
             // Find intersection
             const intersection = this.raycaster.intersectObject(root.mesh, true);
