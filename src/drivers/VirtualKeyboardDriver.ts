@@ -2,15 +2,15 @@ import { VirtualKeyboard, KeyRelease, KeyPress, FocusType } from 'canvas-ui';
 import type { KeyContext, PointerStyleHandler, Driver } from 'canvas-ui';
 import type { TransformAlgorithm } from '../core/TransformAlgorithm';
 import { ThreeRoot } from '../core/ThreeRoot';
-import type { Scene } from 'three';
+import type { Object3D } from 'three';
 
 export class VirtualKeyboardDriver implements Driver {
     keyUI: ThreeRoot;
-    scene: Scene;
+    parent: Object3D;
     eventQueue: string[];
 
-    constructor(scene: Scene, pointerDriver: Driver, transformAlgorithm: TransformAlgorithm | null = null, pointerStyleHandler: PointerStyleHandler | null = null) {
-        this.scene = scene;
+    constructor(parent: Object3D, pointerDriver: Driver, transformAlgorithm: TransformAlgorithm | null = null, pointerStyleHandler: PointerStyleHandler | null = null) {
+        this.parent = parent;
         this.eventQueue = [];
 
         // Create virtual keyboard UI Root
@@ -32,12 +32,12 @@ export class VirtualKeyboardDriver implements Driver {
         const wasEnabled = this.keyUI.enabled;
         this.keyUI.enabled = enable;
 
-        // Add to/remove from scene if keyboard UI is enabled/disabled
+        // Add to/remove from parent if keyboard UI is enabled/disabled
         if(wasEnabled !== this.keyUI.enabled) {
             if(this.keyUI.enabled)
-                this.scene.add(this.keyUI.mesh);
+                this.parent.add(this.keyUI.mesh);
             else
-                this.scene.remove(this.keyUI.mesh);
+                this.parent.remove(this.keyUI.mesh);
         }
     }
 
