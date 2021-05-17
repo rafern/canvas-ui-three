@@ -35,6 +35,9 @@ export class RayPointerDriver implements Driver {
         controller.addEventListener('disconnected', (_event) => {
             this.controllers.delete(controller);
         });
+
+        // Add default hint
+        controller.userData.uiHint = 'none';
     }
 
     private handleDisconnect(controller: Group) {
@@ -59,6 +62,9 @@ export class RayPointerDriver implements Driver {
         if(state.controller !== null) {
             if(state.disconnectListener !== null)
                 state.controller.removeEventListener('disconnected', state.disconnectListener);
+
+            // Reset hint
+            state.controller.userData.uiHint = 'none';
         }
 
         // Assign new controller
@@ -120,6 +126,9 @@ export class RayPointerDriver implements Driver {
                     root.dispatchEvent(
                         new Leave(root.lastFociCapturers.get(FocusType.Pointer))
                     );
+
+                    // Reset hint
+                    controller.userData.uiHint = 'none';
                 }
 
                 continue;
@@ -152,10 +161,21 @@ export class RayPointerDriver implements Driver {
                         );
                         this.switchAssigned(controller, state);
                     }
+
+                    // Add hold hint
+                    controller.userData.uiHint = 'hold';
+                }
+                else {
+                    // Add hover hint
+                    controller.userData.uiHint = 'hover';
                 }
             }
             else
                 e = new PointerMove(x, y);
+
+            // Add hover hint if not pressing and was not hovering
+            if(!state.holding && !state.hovering)
+                controller.userData.uiHint = 'hover';
 
             // Do event and update hovering flag
             root.dispatchEvent(e);
