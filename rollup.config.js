@@ -1,4 +1,6 @@
+import nodeResolve from '@rollup/plugin-node-resolve'
 import typescript from 'rollup-plugin-typescript2'
+
 export default [
   {
     input: './src/index.ts',
@@ -6,7 +8,7 @@ export default [
       file: './lib/index.esm.js',
       format: 'esm',
     },
-    plugins: [typescript()],
+    plugins: [nodeResolve(), typescript()],
   },
   {
     input: './src/index.ts',
@@ -14,6 +16,6 @@ export default [
       file: './lib/index.js',
       format: 'cjs',
     },
-    plugins: [typescript()],
+    plugins: [nodeResolve(), typescript()],
   },
 ]
