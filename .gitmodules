@@ -1,0 +1,3 @@
+[submodule "canvas-ui"]
+	path = canvas-ui
+	url = git+ssh://playklou@playkloud.com:722/home/playklou/canvas-ui
