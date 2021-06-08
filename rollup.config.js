@@ -1,4 +1,3 @@
-import nodeResolve from '@rollup/plugin-node-resolve'
 import typescript from 'rollup-plugin-typescript2'
 
 export default [
@@ -8,7 +7,8 @@ export default [
       file: './lib/index.esm.js',
       format: 'esm',
     },
-    plugins: [nodeResolve(), typescript()],
+    plugins: [typescript()],
+    external: ['three', 'canvas-ui'],
   },
   {
     input: './src/index.ts',
@@ -16,6 +16,7 @@ export default [
       file: './lib/index.js',
       format: 'cjs',
     },
-    plugins: [nodeResolve(), typescript()],
+    plugins: [typescript()],
+    external: ['three', 'canvas-ui'],
   },
 ]
