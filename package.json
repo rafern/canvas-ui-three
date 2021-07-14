@@ -6,8 +6,9 @@
   "module": "lib/index.esm.js",
   "types": "lib/index.d.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "rollup -c"
+    "lint": "eslint . --ext .ts",
+    "build": "rollup -c",
+    "docs": "typedoc --readme none --out ./docs/ ./src/index.ts"
   },
   "files": [
     "lib",
@@ -17,11 +18,24 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@rollup/plugin-eslint": "^8.0.1",
+    "@rollup/plugin-node-resolve": "^13.0.0",
     "@types/three": "^0.129.1",
-    "canvas-ui": "git+ssh://playklou@playkloud.com:722/home/playklou/canvas-ui",
+    "@typescript-eslint/eslint-plugin": "^4.28.3",
+    "@typescript-eslint/parser": "^4.28.3",
+    "canvas-ui": "github:playkostudios/canvas-ui#semver:1.0.0",
+    "eslint": "^7.30.0",
+    "eslint-plugin-tree-shaking": "^1.9.2",
     "rollup": "^2.51.1",
+    "rollup-plugin-terser": "^7.0.2",
     "rollup-plugin-typescript2": "^0.30.0",
     "three": "^0.129.0",
+    "typedoc": "^0.21.4",
+    "typedoc-plugin-markdown": "^3.10.3",
     "typescript": "^4.3.2"
+  },
+  "peerDependencies": {
+    "canvas-ui": "1.0.x",
+    "three": "1.129.x"
   }
 }
