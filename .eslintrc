@@ -12,7 +12,8 @@
   ],
   "rules": {
     "@typescript-eslint/no-unused-vars": ["warn", { "argsIgnorePattern": "^_", "varsIgnorePattern": "^_" }],
-    "tree-shaking/no-side-effects-in-initialization": 2
+    "tree-shaking/no-side-effects-in-initialization": 2,
+    "@typescript-eslint/no-shadow": ["error"]
   }
 }
 
