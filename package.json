@@ -23,7 +23,7 @@
     "@types/three": "^0.129.1",
     "@typescript-eslint/eslint-plugin": "^4.28.3",
     "@typescript-eslint/parser": "^4.28.3",
-    "canvas-ui": "github:playkostudios/canvas-ui#semver:1.0.0",
+    "canvas-ui": "github:playkostudios/canvas-ui#dev",
     "eslint": "^7.30.0",
     "eslint-plugin-tree-shaking": "^1.9.2",
     "rollup": "^2.51.1",
@@ -35,7 +35,6 @@
     "typescript": "^4.3.2"
   },
   "peerDependencies": {
-    "canvas-ui": "1.0.x",
     "three": "1.129.x"
   }
 }
