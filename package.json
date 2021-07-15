@@ -35,6 +35,7 @@
     "typescript": "^4.3.2"
   },
   "peerDependencies": {
+    "canvas-ui": "1.1.x",
     "three": "0.129.x"
   }
 }
