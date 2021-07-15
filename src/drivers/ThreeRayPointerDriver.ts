@@ -21,41 +21,29 @@ export class ThreeRayPointerDriver extends RayPointerDriver {
         const meshRoots: Map<Object3D, ThreeRoot> = new Map();
         for(const root of this.states.keys()) {
             // Ignore roots that are not ThreeRoots; we need their meshes
-            if(root instanceof ThreeRoot) {
-                console.log('root is a three root');
+            if(root instanceof ThreeRoot)
                 meshRoots.set(root.mesh, root);
-            }
-            else
-                console.warn('root is not a three root');
         }
 
         const meshes = Array.from(meshRoots.keys());
         const intersections = this.raycaster.intersectObjects(meshes, true);
-        if(intersections.length === 0) {
-            console.warn('no intersections');
+        if(intersections.length === 0)
             return [null, 0, 0];
-        }
 
         // Pick the closest valid intersection
         for(const intersection of intersections) {
             const uv = intersection.uv;
 
-            if(typeof uv === 'undefined') {
-                console.warn('intersection cancelled due to no uv');
+            if(typeof uv === 'undefined')
                 continue;
-            }
 
             const root = meshRoots.get(intersection.object);
-            if(typeof root === 'undefined') {
-                console.warn('intersection cancelled due to no root from root');
+            if(typeof root === 'undefined')
                 continue;
-            }
 
-            console.log('intersection', root, uv.x, 1 - uv.y);
             return [root, uv.x, 1 - uv.y];
         }
 
-        console.warn('no valid intersections');
         // None of the intersections were valid (missing uv or root)
         return [null, 0, 0];
     }
