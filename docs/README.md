@@ -45,4 +45,4 @@ canvas-ui-three
 
 #### Defined in
 
-[src/core/TransformAlgorithm.ts:3](https://github.com/playkostudios/canvas-ui-three/blob/47d5485/src/core/TransformAlgorithm.ts#L3)
+[src/core/TransformAlgorithm.ts:3](https://github.com/playkostudios/canvas-ui-three/blob/22e406a/src/core/TransformAlgorithm.ts#L3)

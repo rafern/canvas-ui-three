@@ -92,7 +92,7 @@ keyboard and {@link VirtualKeyboardTemplate | keyboard template},
 
 #### Defined in
 
-[src/core/ThreeVirtualKeyboardRoot.ts:29](https://github.com/playkostudios/canvas-ui-three/blob/47d5485/src/core/ThreeVirtualKeyboardRoot.ts#L29)
+[src/core/ThreeVirtualKeyboardRoot.ts:29](https://github.com/playkostudios/canvas-ui-three/blob/22e406a/src/core/ThreeVirtualKeyboardRoot.ts#L29)
 
 ## Properties
 
@@ -237,7 +237,7 @@ The {@link KeyboardDriver} used by this root's virtual keyboard.
 
 #### Defined in
 
-[src/core/ThreeVirtualKeyboardRoot.ts:14](https://github.com/playkostudios/canvas-ui-three/blob/47d5485/src/core/ThreeVirtualKeyboardRoot.ts#L14)
+[src/core/ThreeVirtualKeyboardRoot.ts:14](https://github.com/playkostudios/canvas-ui-three/blob/22e406a/src/core/ThreeVirtualKeyboardRoot.ts#L14)
 
 ___
 
@@ -255,7 +255,7 @@ interfering with the [transformAlgorithm](ThreeVirtualKeyboardRoot.md#transforma
 
 #### Defined in
 
-[src/core/ThreeRoot.ts:23](https://github.com/playkostudios/canvas-ui-three/blob/47d5485/src/core/ThreeRoot.ts#L23)
+[src/core/ThreeRoot.ts:23](https://github.com/playkostudios/canvas-ui-three/blob/22e406a/src/core/ThreeRoot.ts#L23)
 
 ___
 
@@ -326,7 +326,7 @@ world. Can be changed later and is called on update.
 
 #### Defined in
 
-[src/core/ThreeRoot.ts:28](https://github.com/playkostudios/canvas-ui-three/blob/47d5485/src/core/ThreeRoot.ts#L28)
+[src/core/ThreeRoot.ts:28](https://github.com/playkostudios/canvas-ui-three/blob/22e406a/src/core/ThreeRoot.ts#L28)
 
 ___
 
@@ -405,7 +405,7 @@ ___
 
 #### Defined in
 
-[src/core/ThreeRoot.ts:64](https://github.com/playkostudios/canvas-ui-three/blob/47d5485/src/core/ThreeRoot.ts#L64)
+[src/core/ThreeRoot.ts:64](https://github.com/playkostudios/canvas-ui-three/blob/22e406a/src/core/ThreeRoot.ts#L64)
 
 • `set` **enabled**(`enabled`): `void`
 
@@ -421,7 +421,7 @@ ___
 
 #### Defined in
 
-[src/core/ThreeRoot.ts:59](https://github.com/playkostudios/canvas-ui-three/blob/47d5485/src/core/ThreeRoot.ts#L59)
+[src/core/ThreeRoot.ts:59](https://github.com/playkostudios/canvas-ui-three/blob/22e406a/src/core/ThreeRoot.ts#L59)
 
 ___
 
@@ -701,7 +701,7 @@ ___
 
 #### Defined in
 
-[src/core/ThreeRoot.ts:86](https://github.com/playkostudios/canvas-ui-three/blob/47d5485/src/core/ThreeRoot.ts#L86)
+[src/core/ThreeRoot.ts:86](https://github.com/playkostudios/canvas-ui-three/blob/22e406a/src/core/ThreeRoot.ts#L86)
 
 ___
 
@@ -825,7 +825,7 @@ ___
 
 #### Defined in
 
-[src/core/ThreeRoot.ts:68](https://github.com/playkostudios/canvas-ui-three/blob/47d5485/src/core/ThreeRoot.ts#L68)
+[src/core/ThreeRoot.ts:68](https://github.com/playkostudios/canvas-ui-three/blob/22e406a/src/core/ThreeRoot.ts#L68)
 
 ___
 
@@ -900,4 +900,4 @@ on every frame to automatically enable/disable the root if needed
 
 #### Defined in
 
-[src/core/ThreeVirtualKeyboardRoot.ts:39](https://github.com/playkostudios/canvas-ui-three/blob/47d5485/src/core/ThreeVirtualKeyboardRoot.ts#L39)
+[src/core/ThreeVirtualKeyboardRoot.ts:39](https://github.com/playkostudios/canvas-ui-three/blob/22e406a/src/core/ThreeVirtualKeyboardRoot.ts#L39)

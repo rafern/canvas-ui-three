@@ -57,7 +57,7 @@ RayPointerDriver.constructor
 
 #### Defined in
 
-[src/drivers/ThreeRayPointerDriver.ts:8](https://github.com/playkostudios/canvas-ui-three/blob/47d5485/src/drivers/ThreeRayPointerDriver.ts#L8)
+[src/drivers/ThreeRayPointerDriver.ts:8](https://github.com/playkostudios/canvas-ui-three/blob/22e406a/src/drivers/ThreeRayPointerDriver.ts#L8)
 
 ## Properties
 
@@ -86,7 +86,7 @@ ___
 
 #### Defined in
 
-[src/drivers/ThreeRayPointerDriver.ts:6](https://github.com/playkostudios/canvas-ui-three/blob/47d5485/src/drivers/ThreeRayPointerDriver.ts#L6)
+[src/drivers/ThreeRayPointerDriver.ts:6](https://github.com/playkostudios/canvas-ui-three/blob/22e406a/src/drivers/ThreeRayPointerDriver.ts#L6)
 
 ___
 
@@ -171,7 +171,7 @@ RayPointerDriver.castRay
 
 #### Defined in
 
-[src/drivers/ThreeRayPointerDriver.ts:14](https://github.com/playkostudios/canvas-ui-three/blob/47d5485/src/drivers/ThreeRayPointerDriver.ts#L14)
+[src/drivers/ThreeRayPointerDriver.ts:14](https://github.com/playkostudios/canvas-ui-three/blob/22e406a/src/drivers/ThreeRayPointerDriver.ts#L14)
 
 ___
 

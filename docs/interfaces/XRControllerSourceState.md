@@ -17,7 +17,7 @@
 
 #### Defined in
 
-[src/drivers/XRControllerRayPointerSource.ts:8](https://github.com/playkostudios/canvas-ui-three/blob/47d5485/src/drivers/XRControllerRayPointerSource.ts#L8)
+[src/drivers/XRControllerRayPointerSource.ts:8](https://github.com/playkostudios/canvas-ui-three/blob/22e406a/src/drivers/XRControllerRayPointerSource.ts#L8)
 
 ___
 
@@ -27,4 +27,4 @@ ___
 
 #### Defined in
 
-[src/drivers/XRControllerRayPointerSource.ts:7](https://github.com/playkostudios/canvas-ui-three/blob/47d5485/src/drivers/XRControllerRayPointerSource.ts#L7)
+[src/drivers/XRControllerRayPointerSource.ts:7](https://github.com/playkostudios/canvas-ui-three/blob/22e406a/src/drivers/XRControllerRayPointerSource.ts#L7)
