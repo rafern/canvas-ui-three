@@ -1,10 +1,15 @@
 import type { RayPointerSource, RayPointerDriver } from 'canvas-ui';
-import type { WebXRManager } from 'three';
+import type { Group, XRInputSource, WebXRManager } from 'three';
 import { PointerHint } from 'canvas-ui';
+export interface XRControllerSourceState {
+    source: XRInputSource | null;
+    pointer: number;
+}
 export declare class XRControllerRayPointerSource implements RayPointerSource {
-    private controllers;
+    private _controllers;
     private driver;
     constructor(webXRManager: WebXRManager);
+    get controllers(): IterableIterator<[Group, XRControllerSourceState]>;
     private trackController;
     private registerController;
     private unregisterController;

@@ -3,19 +3,23 @@ import type { Group, XRInputSource, WebXRManager } from 'three';
 import { PointerHint } from 'canvas-ui';
 import { Vector3 } from 'three';
 
-interface XRControllerSourceState {
+export interface XRControllerSourceState {
     source: XRInputSource | null;
     pointer: number;
 }
 
 export class XRControllerRayPointerSource implements RayPointerSource {
-    private controllers: Map<Group, XRControllerSourceState> = new Map();
+    private _controllers: Map<Group, XRControllerSourceState> = new Map();
     private driver: RayPointerDriver | null = null;
 
     constructor(webXRManager: WebXRManager) {
         // Keep track of first 2 controllers as they should be enough
         this.trackController(webXRManager.getController(0));
         this.trackController(webXRManager.getController(1));
+    }
+
+    get controllers(): IterableIterator<[Group, XRControllerSourceState]> {
+        return this._controllers.entries();
     }
 
     private trackController(controller: Group) {
@@ -25,7 +29,7 @@ export class XRControllerRayPointerSource implements RayPointerSource {
             pointer: -1
         };
 
-        this.controllers.set(controller, state);
+        this._controllers.set(controller, state);
 
         // Add event listeners
         controller.addEventListener('connected', event => {
@@ -77,7 +81,7 @@ export class XRControllerRayPointerSource implements RayPointerSource {
             this.clearRayPointerDriver();
 
         // Register controllers
-        for(const state of this.controllers.values())
+        for(const state of this._controllers.values())
             this.registerController(state);
 
         // Set driver
@@ -86,7 +90,7 @@ export class XRControllerRayPointerSource implements RayPointerSource {
 
     clearRayPointerDriver(): void {
         // Unregister pointers for each controller
-        for(const state of this.controllers.values())
+        for(const state of this._controllers.values())
             this.unregisterController(state);
 
         // Unset driver
@@ -98,7 +102,7 @@ export class XRControllerRayPointerSource implements RayPointerSource {
         // source
         // XXX this seems inneficient, but the amount of controllers is so
         // small that it shouldn't matter. if it gets bad, use a bi-map
-        for(const [controller, state] of this.controllers) {
+        for(const [controller, state] of this._controllers) {
             if(state.pointer === pointer)
                 controller.userData.pointerHint = hint;
         }

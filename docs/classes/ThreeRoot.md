@@ -91,7 +91,7 @@ Root.constructor
 
 #### Defined in
 
-[src/core/ThreeRoot.ts:39](https://github.com/playkostudios/canvas-ui-three/blob/0013655/src/core/ThreeRoot.ts#L39)
+[src/core/ThreeRoot.ts:39](https://github.com/playkostudios/canvas-ui-three/blob/47d5485/src/core/ThreeRoot.ts#L39)
 
 ## Properties
 
@@ -238,7 +238,7 @@ interfering with the [transformAlgorithm](ThreeRoot.md#transformalgorithm).
 
 #### Defined in
 
-[src/core/ThreeRoot.ts:23](https://github.com/playkostudios/canvas-ui-three/blob/0013655/src/core/ThreeRoot.ts#L23)
+[src/core/ThreeRoot.ts:23](https://github.com/playkostudios/canvas-ui-three/blob/47d5485/src/core/ThreeRoot.ts#L23)
 
 ___
 
@@ -304,7 +304,7 @@ The texture with the canvas data.
 
 #### Defined in
 
-[src/core/ThreeRoot.ts:17](https://github.com/playkostudios/canvas-ui-three/blob/0013655/src/core/ThreeRoot.ts#L17)
+[src/core/ThreeRoot.ts:17](https://github.com/playkostudios/canvas-ui-three/blob/47d5485/src/core/ThreeRoot.ts#L17)
 
 ___
 
@@ -317,7 +317,7 @@ world. Can be changed later and is called on update.
 
 #### Defined in
 
-[src/core/ThreeRoot.ts:28](https://github.com/playkostudios/canvas-ui-three/blob/0013655/src/core/ThreeRoot.ts#L28)
+[src/core/ThreeRoot.ts:28](https://github.com/playkostudios/canvas-ui-three/blob/47d5485/src/core/ThreeRoot.ts#L28)
 
 ___
 
@@ -396,7 +396,7 @@ ___
 
 #### Defined in
 
-[src/core/ThreeRoot.ts:64](https://github.com/playkostudios/canvas-ui-three/blob/0013655/src/core/ThreeRoot.ts#L64)
+[src/core/ThreeRoot.ts:64](https://github.com/playkostudios/canvas-ui-three/blob/47d5485/src/core/ThreeRoot.ts#L64)
 
 • `set` **enabled**(`enabled`): `void`
 
@@ -412,7 +412,7 @@ ___
 
 #### Defined in
 
-[src/core/ThreeRoot.ts:59](https://github.com/playkostudios/canvas-ui-three/blob/0013655/src/core/ThreeRoot.ts#L59)
+[src/core/ThreeRoot.ts:59](https://github.com/playkostudios/canvas-ui-three/blob/47d5485/src/core/ThreeRoot.ts#L59)
 
 ___
 
@@ -692,7 +692,7 @@ Root.paint
 
 #### Defined in
 
-[src/core/ThreeRoot.ts:86](https://github.com/playkostudios/canvas-ui-three/blob/0013655/src/core/ThreeRoot.ts#L86)
+[src/core/ThreeRoot.ts:86](https://github.com/playkostudios/canvas-ui-three/blob/47d5485/src/core/ThreeRoot.ts#L86)
 
 ___
 
@@ -816,7 +816,7 @@ Root.resolveLayout
 
 #### Defined in
 
-[src/core/ThreeRoot.ts:68](https://github.com/playkostudios/canvas-ui-three/blob/0013655/src/core/ThreeRoot.ts#L68)
+[src/core/ThreeRoot.ts:68](https://github.com/playkostudios/canvas-ui-three/blob/47d5485/src/core/ThreeRoot.ts#L68)
 
 ___
 

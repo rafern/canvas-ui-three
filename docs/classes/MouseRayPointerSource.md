@@ -14,9 +14,13 @@
 
 ### Properties
 
+- [\_pointer](MouseRayPointerSource.md#_pointer)
 - [driver](MouseRayPointerSource.md#driver)
-- [pointer](MouseRayPointerSource.md#pointer)
 - [raycaster](MouseRayPointerSource.md#raycaster)
+
+### Accessors
+
+- [pointer](MouseRayPointerSource.md#pointer)
 
 ### Methods
 
@@ -40,9 +44,19 @@
 
 #### Defined in
 
-src/drivers/MouseRayPointerSource.ts:10
+[src/drivers/MouseRayPointerSource.ts:10](https://github.com/playkostudios/canvas-ui-three/blob/47d5485/src/drivers/MouseRayPointerSource.ts#L10)
 
 ## Properties
+
+### \_pointer
+
+• `Private` **\_pointer**: `number` = `-1`
+
+#### Defined in
+
+[src/drivers/MouseRayPointerSource.ts:8](https://github.com/playkostudios/canvas-ui-three/blob/47d5485/src/drivers/MouseRayPointerSource.ts#L8)
+
+___
 
 ### driver
 
@@ -50,17 +64,7 @@ src/drivers/MouseRayPointerSource.ts:10
 
 #### Defined in
 
-src/drivers/MouseRayPointerSource.ts:7
-
-___
-
-### pointer
-
-• `Private` **pointer**: `number` = `-1`
-
-#### Defined in
-
-src/drivers/MouseRayPointerSource.ts:8
+[src/drivers/MouseRayPointerSource.ts:7](https://github.com/playkostudios/canvas-ui-three/blob/47d5485/src/drivers/MouseRayPointerSource.ts#L7)
 
 ___
 
@@ -70,7 +74,21 @@ ___
 
 #### Defined in
 
-src/drivers/MouseRayPointerSource.ts:6
+[src/drivers/MouseRayPointerSource.ts:6](https://github.com/playkostudios/canvas-ui-three/blob/47d5485/src/drivers/MouseRayPointerSource.ts#L6)
+
+## Accessors
+
+### pointer
+
+• `get` **pointer**(): ``null`` \| `number`
+
+#### Returns
+
+``null`` \| `number`
+
+#### Defined in
+
+[src/drivers/MouseRayPointerSource.ts:32](https://github.com/playkostudios/canvas-ui-three/blob/47d5485/src/drivers/MouseRayPointerSource.ts#L32)
 
 ## Methods
 
@@ -92,7 +110,7 @@ src/drivers/MouseRayPointerSource.ts:6
 
 #### Defined in
 
-src/drivers/MouseRayPointerSource.ts:32
+[src/drivers/MouseRayPointerSource.ts:39](https://github.com/playkostudios/canvas-ui-three/blob/47d5485/src/drivers/MouseRayPointerSource.ts#L39)
 
 ___
 
@@ -110,7 +128,7 @@ RayPointerSource.clearRayPointerDriver
 
 #### Defined in
 
-src/drivers/MouseRayPointerSource.ts:63
+[src/drivers/MouseRayPointerSource.ts:70](https://github.com/playkostudios/canvas-ui-three/blob/47d5485/src/drivers/MouseRayPointerSource.ts#L70)
 
 ___
 
@@ -135,7 +153,7 @@ RayPointerSource.onPointerHintChanged
 
 #### Defined in
 
-src/drivers/MouseRayPointerSource.ts:75
+[src/drivers/MouseRayPointerSource.ts:82](https://github.com/playkostudios/canvas-ui-three/blob/47d5485/src/drivers/MouseRayPointerSource.ts#L82)
 
 ___
 
@@ -159,4 +177,4 @@ RayPointerSource.setRayPointerDriver
 
 #### Defined in
 
-src/drivers/MouseRayPointerSource.ts:51
+[src/drivers/MouseRayPointerSource.ts:58](https://github.com/playkostudios/canvas-ui-three/blob/47d5485/src/drivers/MouseRayPointerSource.ts#L58)

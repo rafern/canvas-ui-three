@@ -5,7 +5,7 @@ import { getPointerEventNormPos } from 'canvas-ui';
 export class MouseRayPointerSource implements RayPointerSource {
     private raycaster: Raycaster = new Raycaster();
     private driver: RayPointerDriver | null = null;
-    private pointer = -1; // TODO multi-pointer support
+    private _pointer = -1; // TODO multi-pointer support
 
     constructor(camera: Camera, domElem: HTMLElement) {
         this.raycaster.camera = camera;
@@ -25,8 +25,15 @@ export class MouseRayPointerSource implements RayPointerSource {
         });
         domElem.addEventListener('pointerleave', (event: PointerEvent) => {
             if(event.isPrimary && this.driver !== null)
-                this.driver.leaveAnyPointer(this.pointer);
+                this.driver.leaveAnyPointer(this._pointer);
         });
+    }
+
+    get pointer(): number | null {
+        if(this._pointer === -1)
+            return null;
+        else
+            return this._pointer;
     }
 
     private castRay(xNorm: number, yNorm: number, pressing: boolean | null = null) {
@@ -41,7 +48,7 @@ export class MouseRayPointerSource implements RayPointerSource {
 
         // Cast ray
         this.driver.handlePointerRay(
-            this.pointer,
+            this._pointer,
             pressing,
             this.raycaster.ray.origin.toArray(),
             this.raycaster.ray.direction.toArray()
@@ -54,7 +61,7 @@ export class MouseRayPointerSource implements RayPointerSource {
             this.clearRayPointerDriver();
 
         // Register pointer
-        this.pointer = driver.registerPointer();
+        this._pointer = driver.registerPointer();
 
         // Set driver
         this.driver = driver;
@@ -62,12 +69,12 @@ export class MouseRayPointerSource implements RayPointerSource {
 
     clearRayPointerDriver(): void {
         // Unregister pointer
-        if(this.pointer !== -1)
-            this.driver?.unregisterPointer(this.pointer);
+        if(this._pointer !== -1)
+            this.driver?.unregisterPointer(this._pointer);
 
         // Unset driver and pointer
         this.driver = null;
-        this.pointer = -1;
+        this._pointer = -1;
     }
 
     // Can be ignored, since mouse styling is done via pointer styles

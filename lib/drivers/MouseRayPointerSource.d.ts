@@ -3,8 +3,9 @@ import type { RayPointerSource, RayPointerDriver, PointerHint } from 'canvas-ui'
 export declare class MouseRayPointerSource implements RayPointerSource {
     private raycaster;
     private driver;
-    private pointer;
+    private _pointer;
     constructor(camera: Camera, domElem: HTMLElement);
+    get pointer(): number | null;
     private castRay;
     setRayPointerDriver(driver: RayPointerDriver): void;
     clearRayPointerDriver(): void;

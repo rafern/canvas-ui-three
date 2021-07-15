@@ -15,6 +15,10 @@ canvas-ui-three
 - [ThreeRayPointerDriver](classes/ThreeRayPointerDriver.md)
 - [XRControllerRayPointerSource](classes/XRControllerRayPointerSource.md)
 
+### Interfaces
+
+- [XRControllerSourceState](interfaces/XRControllerSourceState.md)
+
 ### Type aliases
 
 - [TransformAlgorithm](README.md#transformalgorithm)
@@ -41,4 +45,4 @@ canvas-ui-three
 
 #### Defined in
 
-[src/core/TransformAlgorithm.ts:3](https://github.com/playkostudios/canvas-ui-three/blob/0013655/src/core/TransformAlgorithm.ts#L3)
+[src/core/TransformAlgorithm.ts:3](https://github.com/playkostudios/canvas-ui-three/blob/47d5485/src/core/TransformAlgorithm.ts#L3)
