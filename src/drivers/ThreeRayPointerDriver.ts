@@ -21,8 +21,12 @@ export class ThreeRayPointerDriver extends RayPointerDriver {
         const meshRoots: Map<Object3D, ThreeRoot> = new Map();
         for(const root of this.states.keys()) {
             // Ignore roots that are not ThreeRoots; we need their meshes
-            if(root instanceof ThreeRoot)
+            if(root instanceof ThreeRoot) {
+                console.log('root is a three root');
                 meshRoots.set(root.mesh, root);
+            }
+            else
+                console.warn('root is not a three root');
         }
 
         const meshes = Array.from(meshRoots.keys());
