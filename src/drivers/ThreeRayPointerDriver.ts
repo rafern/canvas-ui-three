@@ -27,23 +27,31 @@ export class ThreeRayPointerDriver extends RayPointerDriver {
 
         const meshes = Array.from(meshRoots.keys());
         const intersections = this.raycaster.intersectObjects(meshes, true);
-        if(intersections.length === 0)
+        if(intersections.length === 0) {
+            console.warn('no intersections');
             return [null, 0, 0];
+        }
 
         // Pick the closest valid intersection
         for(const intersection of intersections) {
             const uv = intersection.uv;
 
-            if(typeof uv === 'undefined')
+            if(typeof uv === 'undefined') {
+                console.warn('intersection cancelled due to no uv');
                 continue;
+            }
 
             const root = meshRoots.get(intersection.object);
-            if(typeof root === 'undefined')
+            if(typeof root === 'undefined') {
+                console.warn('intersection cancelled due to no root from root');
                 continue;
+            }
 
+            console.log('intersection', root, uv.x, 1 - uv.y);
             return [root, uv.x, 1 - uv.y];
         }
 
+        console.warn('no valid intersections');
         // None of the intersections were valid (missing uv or root)
         return [null, 0, 0];
     }
