@@ -42,7 +42,7 @@ export class MouseRayPointerSource implements RayPointerSource {
 
         // Get origin and direction. Using a temporary raycaster
         this.raycaster.setFromCamera(
-            { x: xNorm * 2 - 1, y: yNorm * 2 - 1 },
+            { x: xNorm * 2 - 1, y: 1 - yNorm * 2 },
             this.raycaster.camera,
         );
 
