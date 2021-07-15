@@ -1,25 +1,43 @@
+import type { PointerStyleHandler, Widget, Theme } from 'canvas-ui';
 import type { TransformAlgorithm } from './TransformAlgorithm';
-import type { PointerStyleHandler, Widget } from 'canvas-ui';
-import { Root } from 'canvas-ui';
+import { Root, defaultTheme } from 'canvas-ui';
 
-// Externals
 import {
     CanvasTexture, PlaneGeometry, MeshBasicMaterial, Mesh, Vector2, Object3D
 } from 'three';
 
+/**
+ * A {@link Root} that also manages a three.js Mesh so that it can be added to a
+ * Scene.
+ *
+ * @category Core
+ */
 export class ThreeRoot extends Root {
-    // The texture with the canvas data
+    /** The texture with the canvas data. */
     private texture: CanvasTexture;
-    // The textured mesh to be used for a scene
+    /**
+     * The textured Mesh to be used for a Scene. Not actually a Mesh, but an
+     * Object3D which contains a mesh so that the mesh can be resized without
+     * interfering with the {@link transformAlgorithm}.
+     */
     readonly mesh: Object3D;
-    // Transform algorithm; decides how to position the Canvas' mesh in the
-    // world. Can be changed later and is called on update
+    /**
+     * Transform algorithm; decides how to position the canvas' mesh in the
+     * world. Can be changed later and is called on update.
+     */
     transformAlgorithm: TransformAlgorithm | null;
 
-    // A ThreeRoot is a Root, but it also manages a three.js mesh so that it can
-    // be added to a scene
-    constructor(child: Widget, pointerStyleHandler: PointerStyleHandler | null = null, transformAlgorithm: TransformAlgorithm | null = null) {
-        super(child, pointerStyleHandler);
+    /**
+     * Creates a new ThreeRoot.
+     *
+     * Sets {@link child}, {@link pointerStyleHandler},
+     * {@link transformAlgorithm} and {@link child}'s
+     * {@link Widget.inheritedTheme | inherited theme}.
+     *
+     * @param theme By default, the theme is {@link defaultTheme}
+     */
+    constructor(child: Widget, pointerStyleHandler: PointerStyleHandler | null = null, transformAlgorithm: TransformAlgorithm | null = null, theme: Theme = defaultTheme) {
+        super(child, pointerStyleHandler, theme);
 
         // Create texture out of canvas. For now, the texture is invalid
         this.texture = new CanvasTexture(this.viewport.canvas);
@@ -38,16 +56,16 @@ export class ThreeRoot extends Root {
         this.transformAlgorithm = transformAlgorithm;
     }
 
-    set enabled(enabled: boolean) {
+    override set enabled(enabled: boolean) {
         super.enabled = enabled;
         this.mesh.visible = enabled;
     }
 
-    get enabled(): boolean {
+    override get enabled(): boolean {
         return super.enabled;
     }
 
-    resolveLayout(): boolean {
+    override resolveLayout(): boolean {
         const resized = super.resolveLayout();
 
         // Resize mesh and texture if needed
@@ -65,7 +83,7 @@ export class ThreeRoot extends Root {
         return resized;
     }
 
-    paint(): boolean {
+    override paint(): boolean {
         const wasDirty = super.paint();
 
         // Update texture if needed
