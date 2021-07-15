@@ -22,11 +22,11 @@ export class ThreeRayPointerDriver extends RayPointerDriver {
         for(const root of this.states.keys()) {
             // Ignore roots that are not ThreeRoots; we need their meshes
             if(root instanceof ThreeRoot)
-                meshRoots.set(root.mesh, root);
+                meshRoots.set(root.mesh.children[0], root);
         }
 
         const meshes = Array.from(meshRoots.keys());
-        const intersections = this.raycaster.intersectObjects(meshes, true);
+        const intersections = this.raycaster.intersectObjects(meshes);
         if(intersections.length === 0)
             return [null, 0, 0];
 
@@ -38,10 +38,8 @@ export class ThreeRayPointerDriver extends RayPointerDriver {
                 continue;
 
             const root = meshRoots.get(intersection.object);
-            if(typeof root === 'undefined') {
-                console.warn('failed intersection object:', intersection.object);
+            if(typeof root === 'undefined')
                 continue;
-            }
 
             return [root, uv.x, 1 - uv.y];
         }
