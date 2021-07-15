@@ -38,8 +38,10 @@ export class ThreeRayPointerDriver extends RayPointerDriver {
                 continue;
 
             const root = meshRoots.get(intersection.object);
-            if(typeof root === 'undefined')
+            if(typeof root === 'undefined') {
+                console.warn('failed intersection object:', intersection.object);
                 continue;
+            }
 
             return [root, uv.x, 1 - uv.y];
         }
