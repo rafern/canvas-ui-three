@@ -38,9 +38,7 @@ export class MouseRayPointerSource implements RayPointerSource {
 
     private castRay(xNorm: number, yNorm: number, pressing: boolean | null = null) {
         if(this.driver === null)
-            return console.warn(`cast ray cancelled at ${xNorm}, ${yNorm}, pressing ${pressing}`);
-        else
-            console.log(`cast ray at ${xNorm}, ${yNorm}, pressing ${pressing}`);
+            return;
 
         // Get origin and direction. Using a temporary raycaster
         this.raycaster.setFromCamera(
