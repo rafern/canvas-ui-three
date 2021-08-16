@@ -74,7 +74,7 @@ export class XRControllerRayPointerSource implements RayPointerSource {
     private registerController(state: XRControllerSourceState) {
         // Register pointer and save pointer ID
         if(this.driver !== null && state.source !== null && state.pointer === -1)
-            state.pointer = this.driver.registerPointer();
+            state.pointer = this.driver.registerPointer(true);
     }
 
     private unregisterController(state: XRControllerSourceState) {
