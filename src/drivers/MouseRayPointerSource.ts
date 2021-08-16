@@ -140,4 +140,22 @@ export class MouseRayPointerSource implements RayPointerSource {
 
         return pointerID;
     }
+
+    /** Get the mouse pointer ID */
+    get mouseID(): number | null {
+        return this.mousePointerID;
+    }
+
+    /** Get all registered pointer IDs */
+    get pointerIDs(): Array<number> {
+        const ids = [];
+
+        if(this.mousePointerID !== null)
+            ids.push(this.mousePointerID);
+
+        for(const pointer of this.pointers.values())
+            ids.push(pointer);
+
+        return ids;
+    }
 }

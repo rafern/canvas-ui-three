@@ -1,6 +1,6 @@
 {
   "name": "@rafern/canvas-ui-three",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "A Typescript UI library which uses HTML canvases - three.js integration",
   "main": "lib/index.js",
   "module": "lib/index.esm.js",

@@ -24,4 +24,8 @@ export declare class MouseRayPointerSource implements RayPointerSource {
      * driver is null and therefore registering is impossible, null is returned.
      */
     private getPointerID;
+    /** Get the mouse pointer ID */
+    get mouseID(): number | null;
+    /** Get all registered pointer IDs */
+    get pointerIDs(): Array<number>;
 }
