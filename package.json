@@ -22,7 +22,7 @@
     "url": "https://github.com/rafern/canvas-ui-three.git"
   },
   "devDependencies": {
-    "@rafern/canvas-ui": "^3.0.0",
+    "@rafern/canvas-ui": "^3.1.2",
     "@types/three": "^0.131.0",
     "@typescript-eslint/eslint-plugin": "^4.28.3",
     "@typescript-eslint/parser": "^4.28.3",
