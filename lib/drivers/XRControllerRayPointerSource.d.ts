@@ -1,6 +1,6 @@
-import type { RayPointerSource, RayPointerDriver } from 'canvas-ui';
+import type { RayPointerSource, RayPointerDriver } from '@rafern/canvas-ui';
 import type { Group, XRInputSource, WebXRManager } from 'three';
-import { PointerHint } from 'canvas-ui';
+import { PointerHint } from '@rafern/canvas-ui';
 export interface XRControllerSourceState {
     source: XRInputSource | null;
     pointer: number;

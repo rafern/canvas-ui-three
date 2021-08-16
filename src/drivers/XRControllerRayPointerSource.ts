@@ -1,6 +1,6 @@
-import type { RayPointerSource, RayPointerDriver } from 'canvas-ui';
+import type { RayPointerSource, RayPointerDriver } from '@rafern/canvas-ui';
 import type { Group, XRInputSource, WebXRManager } from 'three';
-import { PointerHint } from 'canvas-ui';
+import { PointerHint } from '@rafern/canvas-ui';
 import { Vector3 } from 'three';
 
 export interface XRControllerSourceState {
@@ -47,11 +47,22 @@ export class XRControllerRayPointerSource implements RayPointerSource {
                 const origin = new Vector3();
                 controller.getWorldPosition(origin);
 
+                let buttonBits = 0;
+                const buttons = state.source.gamepad.buttons;
+                for(const buttonID in buttons) {
+                    const bit = parseInt(buttonID, 10);
+                    if(!isNaN(bit) && buttons[bit].pressed)
+                        buttonBits |= 1 << bit;
+                }
+
                 this.driver.handlePointerRay(
                     state.pointer,
-                    state.source.gamepad.buttons[0].pressed,
+                    buttonBits,
                     origin.toArray(),
                     direction.toArray(),
+                    false,
+                    false,
+                    false,
                 )
             }
         })

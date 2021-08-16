@@ -1,4 +1,4 @@
-import type { Theme, KeyboardDriver, VirtualKeyboardTemplate, PointerStyleHandler } from 'canvas-ui';
+import type { Theme, KeyboardDriver, VirtualKeyboardTemplate, PointerStyleHandler } from '@rafern/canvas-ui';
 import type { TransformAlgorithm } from './TransformAlgorithm';
 import { ThreeRoot } from './ThreeRoot';
 /**
@@ -18,10 +18,8 @@ export declare class ThreeVirtualKeyboardRoot extends ThreeRoot {
      * {@link pointerStyleHandler}, {@link transformAlgorithm} and
      * {@link child}'s {@link Widget.inheritedTheme | inherited theme}.
      *
-     * @param keyboardTemplate By default, the virtual keyboard template is
-     * {@link defaultVirtualKeyboardTemplate}
-     *
-     * @param theme By default, the theme is {@link defaultTheme}
+     * @param keyboardTemplate By default, the virtual keyboard template is {@link defaultVirtualKeyboardTemplate}
+     * @param theme If none supplied, then the default theme found in {@link Theme.constructor} is used
      */
     constructor(keyboardDriver: KeyboardDriver, keyboardTemplate?: VirtualKeyboardTemplate, pointerStyleHandler?: PointerStyleHandler | null, transformAlgorithm?: TransformAlgorithm | null, theme?: Theme);
     /**

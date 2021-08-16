@@ -1,6 +1,6 @@
 import { /* tree-shaking no-side-effects-when-called */ Raycaster, Ray, Vector3, Object3D, Camera } from 'three';
+import { RayPointerDriver } from '@rafern/canvas-ui';
 import { ThreeRoot } from '../core/ThreeRoot';
-import { RayPointerDriver } from 'canvas-ui';
 
 export class ThreeRayPointerDriver extends RayPointerDriver {
     private readonly raycaster: Raycaster = new Raycaster();

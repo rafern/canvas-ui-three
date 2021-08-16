@@ -2,8 +2,8 @@
   "compilerOptions": {
     "outDir": "lib",
     "target": "es6",
-    "module": "esnext",
-    "lib": ["es2016", "dom"],
+    "module": "es6",
+    "lib": ["es6", "dom"],
     "sourceMap": true,
     "strict": true,
     "strictFunctionTypes": true,
@@ -12,12 +12,15 @@
     "noImplicitAny": true,
     "strictNullChecks": true,
     "alwaysStrict": true,
-    "noUnusedLocals": true,
+    "noUnusedLocals": false,
     "noUnusedParameters": true,
     "skipLibCheck": true,
     "declaration": true,
     "esModuleInterop": true,
-    "moduleResolution": "node"
+    "noImplicitOverride": true,
+    "experimentalDecorators": true,
+    "moduleResolution": "node",
+    "emitDeclarationOnly": true
   },
   "include": ["src"],
   "exclude": ["node_modules", "lib", "**/*.test.ts"]

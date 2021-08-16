@@ -1,6 +1,6 @@
 import { /* tree-shaking no-side-effects-when-called */ Raycaster, Camera } from 'three';
-import type { RayPointerSource, RayPointerDriver, PointerHint } from 'canvas-ui';
-import { getPointerEventNormPos } from 'canvas-ui';
+import type { RayPointerSource, RayPointerDriver, PointerHint } from '@rafern/canvas-ui';
+import { getPointerEventNormPos } from '@rafern/canvas-ui';
 
 export class MouseRayPointerSource implements RayPointerSource {
     private raycaster: Raycaster = new Raycaster();
@@ -13,15 +13,15 @@ export class MouseRayPointerSource implements RayPointerSource {
         // Add listeners to DOM element
         domElem.addEventListener('pointermove', (event: PointerEvent) => {
             if(event.isPrimary)
-                this.castRay(...getPointerEventNormPos(event, domElem));
+                this.castRay(...getPointerEventNormPos(event, domElem), event.buttons, event.shiftKey, event.ctrlKey, event.altKey);
         });
         domElem.addEventListener('pointerdown', (event: PointerEvent) => {
             if(event.isPrimary)
-                this.castRay(...getPointerEventNormPos(event, domElem), true);
+                this.castRay(...getPointerEventNormPos(event, domElem), event.buttons, event.shiftKey, event.ctrlKey, event.altKey);
         });
         domElem.addEventListener('pointerup', (event: PointerEvent) => {
             if(event.isPrimary)
-                this.castRay(...getPointerEventNormPos(event, domElem), false);
+                this.castRay(...getPointerEventNormPos(event, domElem), event.buttons, event.shiftKey, event.ctrlKey, event.altKey);
         });
         domElem.addEventListener('pointerleave', (event: PointerEvent) => {
             if(event.isPrimary && this.driver !== null)
@@ -36,7 +36,7 @@ export class MouseRayPointerSource implements RayPointerSource {
             return this._pointer;
     }
 
-    private castRay(xNorm: number, yNorm: number, pressing: boolean | null = null) {
+    private castRay(xNorm: number, yNorm: number, pressing: number | null, shift: boolean, ctrl: boolean, alt: boolean) {
         if(this.driver === null)
             return;
 
@@ -51,7 +51,10 @@ export class MouseRayPointerSource implements RayPointerSource {
             this._pointer,
             pressing,
             this.raycaster.ray.origin.toArray(),
-            this.raycaster.ray.direction.toArray()
+            this.raycaster.ray.direction.toArray(),
+            shift,
+            ctrl,
+            alt,
         );
     }
 

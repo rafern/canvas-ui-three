@@ -1,41 +1,40 @@
 {
-  "name": "canvas-ui-three",
-  "version": "1.0.0",
-  "description": "",
+  "name": "@rafern/canvas-ui-three",
+  "version": "1.0.1",
+  "description": "A Typescript UI library which uses HTML canvases - three.js integration",
   "main": "lib/index.js",
   "module": "lib/index.esm.js",
   "types": "lib/index.d.ts",
   "scripts": {
     "lint": "eslint . --ext .ts",
-    "build": "rollup -c",
-    "docs": "typedoc --readme none --out ./docs/ ./src/index.ts"
+    "build": "tsc && node esbuild.mjs",
+    "docs": "typedoc --out ./docs/ ./src/index.ts"
   },
   "files": [
     "lib",
     "package.json"
   ],
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "rafern",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rafern/canvas-ui-three.git"
+  },
   "devDependencies": {
-    "@rollup/plugin-eslint": "^8.0.1",
-    "@rollup/plugin-node-resolve": "^13.0.0",
-    "@types/three": "^0.129.1",
+    "@rafern/canvas-ui": "^3.0.0",
+    "@types/three": "^0.131.0",
     "@typescript-eslint/eslint-plugin": "^4.28.3",
     "@typescript-eslint/parser": "^4.28.3",
-    "canvas-ui": "github:playkostudios/canvas-ui#1.1.0",
+    "esbuild": "^0.12.16",
     "eslint": "^7.30.0",
     "eslint-plugin-tree-shaking": "^1.9.2",
-    "rollup": "^2.51.1",
-    "rollup-plugin-terser": "^7.0.2",
-    "rollup-plugin-typescript2": "^0.30.0",
-    "three": "^0.129.0",
+    "three": "^0.131.3",
     "typedoc": "^0.21.4",
-    "typedoc-plugin-markdown": "^3.10.3",
     "typescript": "^4.3.2"
   },
   "peerDependencies": {
-    "canvas-ui": "1.1.x",
-    "three": "0.129.x"
+    "@rafern/canvas-ui": "3.x",
+    "three": "0.131.x"
   }
 }

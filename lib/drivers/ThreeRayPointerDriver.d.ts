@@ -1,6 +1,6 @@
 import { Camera } from 'three';
+import { RayPointerDriver } from '@rafern/canvas-ui';
 import { ThreeRoot } from '../core/ThreeRoot';
-import { RayPointerDriver } from 'canvas-ui';
 export declare class ThreeRayPointerDriver extends RayPointerDriver {
     private readonly raycaster;
     constructor(camera: Camera);

@@ -1,6 +1,6 @@
-import type { PointerStyleHandler, Widget, Theme } from 'canvas-ui';
+import type { PointerStyleHandler, Widget, Theme } from '@rafern/canvas-ui';
 import type { TransformAlgorithm } from './TransformAlgorithm';
-import { Root, defaultTheme } from 'canvas-ui';
+import { Root } from '@rafern/canvas-ui';
 
 import {
     CanvasTexture, PlaneGeometry, MeshBasicMaterial, Mesh, Vector2, Object3D
@@ -34,9 +34,9 @@ export class ThreeRoot extends Root {
      * {@link transformAlgorithm} and {@link child}'s
      * {@link Widget.inheritedTheme | inherited theme}.
      *
-     * @param theme By default, the theme is {@link defaultTheme}
+     * @param theme If none supplied, then the default theme found in {@link Theme.constructor} is used
      */
-    constructor(child: Widget, pointerStyleHandler: PointerStyleHandler | null = null, transformAlgorithm: TransformAlgorithm | null = null, theme: Theme = defaultTheme) {
+    constructor(child: Widget, pointerStyleHandler: PointerStyleHandler | null = null, transformAlgorithm: TransformAlgorithm | null = null, theme?: Theme) {
         super(child, pointerStyleHandler, theme);
 
         // Create texture out of canvas. For now, the texture is invalid

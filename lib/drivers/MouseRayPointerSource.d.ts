@@ -1,5 +1,5 @@
 import { Camera } from 'three';
-import type { RayPointerSource, RayPointerDriver, PointerHint } from 'canvas-ui';
+import type { RayPointerSource, RayPointerDriver, PointerHint } from '@rafern/canvas-ui';
 export declare class MouseRayPointerSource implements RayPointerSource {
     private raycaster;
     private driver;
