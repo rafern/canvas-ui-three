@@ -70,7 +70,10 @@ export class ThreeRoot extends Root {
 
         // Resize mesh and texture if needed
         if(resized) {
-            const [width, height] = this.dimensions;
+            let [width, height] = this.dimensions;
+            // Round width and height down to avoid blurry canvas textures
+            width = Math.floor(width);
+            height = Math.floor(height);
             const [canvasWidth, canvasHeight] = this.canvasDimensions;
             const wRatio = width / canvasWidth;
             const hRatio = height / canvasHeight;
