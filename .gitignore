@@ -1,4 +1,4 @@
 package-lock.json
-canvas-ui-three.sublime-project
-canvas-ui-three.sublime-workspace
+*.sublime-project
+*.sublime-workspace
 node_modules/
