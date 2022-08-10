@@ -54,7 +54,8 @@ export class MouseRayPointerSource implements RayPointerSource {
 
             this.driver?.wheelPointer(
                 root, this.mousePointerID, xNorm, yNorm, event.deltaX,
-                event.deltaY, event.shiftKey, event.ctrlKey, event.altKey,
+                event.deltaY, event.deltaZ, event.deltaMode, event.shiftKey,
+                event.ctrlKey, event.altKey,
             );
         });
     }

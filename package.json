@@ -1,10 +1,10 @@
 {
   "name": "@rafern/canvas-ui-three",
-  "version": "2.0.0",
+  "version": "3.0.0-rc1",
   "description": "A Typescript UI library which uses HTML canvases - three.js integration",
-  "main": "lib/index.js",
-  "module": "lib/index.esm.js",
-  "types": "lib/index.d.ts",
+  "main": "./lib/index.esm.js",
+  "exports": "./lib/index.esm.js",
+  "types": "./lib/index.d.ts",
   "scripts": {
     "lint": "eslint . --ext .ts",
     "build": "tsc && node esbuild.mjs",
@@ -22,19 +22,19 @@
     "url": "https://github.com/rafern/canvas-ui-three.git"
   },
   "devDependencies": {
-    "@rafern/canvas-ui": "^3.2.0",
-    "@types/three": "^0.131.0",
-    "@typescript-eslint/eslint-plugin": "^4.28.3",
-    "@typescript-eslint/parser": "^4.28.3",
-    "esbuild": "^0.12.16",
-    "eslint": "^7.30.0",
-    "eslint-plugin-tree-shaking": "^1.9.2",
-    "three": "^0.131.3",
-    "typedoc": "^0.21.6",
-    "typescript": "^4.3.2"
+    "@rafern/canvas-ui": "^4.0.0-rc4",
+    "@types/three": "^0.143.0",
+    "@typescript-eslint/eslint-plugin": "^5.33.0",
+    "@typescript-eslint/parser": "^5.33.0",
+    "esbuild": "^0.14.54",
+    "eslint": "^8.21.0",
+    "eslint-plugin-tree-shaking": "^1.10.0",
+    "three": "^0.143.0",
+    "typedoc": "^0.23.10",
+    "typescript": "^4.7.4"
   },
   "peerDependencies": {
-    "@rafern/canvas-ui": ">= 3.2.0 < 4",
+    "@rafern/canvas-ui": ">= 4.0.0-rc4 < 5",
     "three": ">= 0.131.0"
   }
 }

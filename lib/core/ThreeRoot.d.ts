@@ -1,7 +1,16 @@
-import type { PointerStyleHandler, Widget, Theme } from '@rafern/canvas-ui';
+import type { Widget, RootProperties } from '@rafern/canvas-ui';
 import type { TransformAlgorithm } from './TransformAlgorithm';
 import { Root } from '@rafern/canvas-ui';
 import { Object3D } from 'three';
+/**
+ * Optional ThreeRoot constructor properties.
+ *
+ * @category Core
+ */
+export interface ThreeRootProperties extends RootProperties {
+    /** Sets {@link ThreeRoot#transformAlgorithm}. */
+    transformAlgorithm?: TransformAlgorithm | null;
+}
 /**
  * A {@link Root} that also manages a three.js Mesh so that it can be added to a
  * Scene.
@@ -28,10 +37,8 @@ export declare class ThreeRoot extends Root {
      * Sets {@link child}, {@link pointerStyleHandler},
      * {@link transformAlgorithm} and {@link child}'s
      * {@link Widget.inheritedTheme | inherited theme}.
-     *
-     * @param theme If none supplied, then the default theme found in {@link Theme.constructor} is used
      */
-    constructor(child: Widget, pointerStyleHandler?: PointerStyleHandler | null, transformAlgorithm?: TransformAlgorithm | null, theme?: Theme);
+    constructor(child: Widget, properties?: ThreeRootProperties);
     set enabled(enabled: boolean);
     get enabled(): boolean;
     resolveLayout(): boolean;

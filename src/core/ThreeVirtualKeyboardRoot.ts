@@ -1,7 +1,6 @@
-import type { Theme, KeyboardDriver, VirtualKeyboardTemplate, PointerStyleHandler } from '@rafern/canvas-ui';
+import { KeyboardDriver, VirtualKeyboardRootProperties, Margin } from '@rafern/canvas-ui';
 import { VirtualKeyboard, defaultVirtualKeyboardTemplate } from '@rafern/canvas-ui';
-import type { TransformAlgorithm } from './TransformAlgorithm';
-import { ThreeRoot } from './ThreeRoot';
+import { ThreeRoot, ThreeRootProperties } from './ThreeRoot';
 
 /**
  * A {@link VirtualKeyboardRoot} but it extends {@link ThreeRoot} instead of
@@ -20,12 +19,17 @@ export class ThreeVirtualKeyboardRoot extends ThreeRoot {
      * keyboard and {@link VirtualKeyboardTemplate | keyboard template},
      * {@link pointerStyleHandler}, {@link transformAlgorithm} and
      * {@link child}'s {@link Widget.inheritedTheme | inherited theme}.
-     *
-     * @param keyboardTemplate By default, the virtual keyboard template is {@link defaultVirtualKeyboardTemplate}
-     * @param theme If none supplied, then the default theme found in {@link Theme.constructor} is used
      */
-    constructor(keyboardDriver: KeyboardDriver, keyboardTemplate: VirtualKeyboardTemplate = defaultVirtualKeyboardTemplate, pointerStyleHandler: PointerStyleHandler | null = null, transformAlgorithm: TransformAlgorithm | null = null, theme?: Theme) {
-        super(new VirtualKeyboard(keyboardDriver, keyboardTemplate), pointerStyleHandler, transformAlgorithm, theme);
+    constructor(keyboardDriver: KeyboardDriver, properties?: VirtualKeyboardRootProperties & ThreeRootProperties) {
+        super(
+            new Margin(
+                new VirtualKeyboard(
+                    keyboardDriver,
+                    properties?.keyboardTemplate ?? defaultVirtualKeyboardTemplate
+                ),
+            ),
+            properties
+        );
         this.keyboardDriver = keyboardDriver;
     }
 
@@ -36,6 +40,6 @@ export class ThreeVirtualKeyboardRoot extends ThreeRoot {
      */
     updateVisibility(): void {
         // Update visibility of root by enabling/disabling it
-        this.enabled = this.keyboardDriver.getFocusedRoot() !== null;
+        this.enabled = this.keyboardDriver.needsInput;
     }
 }

@@ -1,5 +1,6 @@
+/// <reference types="webxr" />
 import type { RayPointerSource, RayPointerDriver } from '@rafern/canvas-ui';
-import type { Group, XRInputSource, WebXRManager } from 'three';
+import type { Group, WebXRManager } from 'three';
 import { PointerHint } from '@rafern/canvas-ui';
 export interface XRControllerSourceState {
     source: XRInputSource | null;

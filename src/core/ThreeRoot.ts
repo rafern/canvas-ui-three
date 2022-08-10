@@ -1,10 +1,20 @@
-import type { PointerStyleHandler, Widget, Theme } from '@rafern/canvas-ui';
+import type { Widget, RootProperties } from '@rafern/canvas-ui';
 import type { TransformAlgorithm } from './TransformAlgorithm';
 import { Root } from '@rafern/canvas-ui';
 
 import {
     CanvasTexture, PlaneGeometry, MeshBasicMaterial, Mesh, Vector2, Object3D
 } from 'three';
+
+/**
+ * Optional ThreeRoot constructor properties.
+ *
+ * @category Core
+ */
+export interface ThreeRootProperties extends RootProperties {
+    /** Sets {@link ThreeRoot#transformAlgorithm}. */
+    transformAlgorithm?: TransformAlgorithm | null;
+}
 
 /**
  * A {@link Root} that also manages a three.js Mesh so that it can be added to a
@@ -33,11 +43,9 @@ export class ThreeRoot extends Root {
      * Sets {@link child}, {@link pointerStyleHandler},
      * {@link transformAlgorithm} and {@link child}'s
      * {@link Widget.inheritedTheme | inherited theme}.
-     *
-     * @param theme If none supplied, then the default theme found in {@link Theme.constructor} is used
      */
-    constructor(child: Widget, pointerStyleHandler: PointerStyleHandler | null = null, transformAlgorithm: TransformAlgorithm | null = null, theme?: Theme) {
-        super(child, pointerStyleHandler, theme);
+    constructor(child: Widget, properties?: ThreeRootProperties) {
+        super(child, properties);
 
         // Create texture out of canvas. For now, the texture is invalid
         this.texture = new CanvasTexture(this.viewport.canvas);
@@ -53,7 +61,7 @@ export class ThreeRoot extends Root {
         this.mesh.add(internalMesh);
 
         // Transforms algorithm
-        this.transformAlgorithm = transformAlgorithm;
+        this.transformAlgorithm = properties?.transformAlgorithm ?? null;
     }
 
     override set enabled(enabled: boolean) {
