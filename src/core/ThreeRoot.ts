@@ -83,10 +83,11 @@ export class ThreeRoot extends Root {
             width = Math.floor(width);
             height = Math.floor(height);
             const [canvasWidth, canvasHeight] = this.canvasDimensions;
-            const wRatio = width / canvasWidth;
-            const hRatio = height / canvasHeight;
-            this.texture.offset = new Vector2(0, 1 - hRatio);
-            this.texture.repeat = new Vector2(wRatio, hRatio);
+            const [scaleX, scaleY] = this.effectiveScale;
+            const u = scaleX * width / canvasWidth;
+            const v = scaleY * height / canvasHeight;
+            this.texture.offset = new Vector2(0, 1 - v);
+            this.texture.repeat = new Vector2(u, v);
 
             this.mesh.children[0].scale.fromArray([width, height, 1]);
         }
