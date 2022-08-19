@@ -21,7 +21,7 @@ This project is licensed under the MIT license (see the LICENSE file)
 
 This project uses the following open-source projects:
 - [@rafern/canvas-ui](https://github.com/rafern/canvas-ui) licensed under the MIT license
-- [@types/three](https://github.com/DefinitelyTyped/DefinitelyTyped) licensed under the MIT license
+- [@types/three (DefinitelyTyped)](https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/three) licensed under the MIT license
 - [@typescript-eslint/eslint-plugin](https://github.com/typescript-eslint/typescript-eslint/tree/master/packages/eslint-plugin) licensed under the MIT license
 - [@typescript-eslint/parser](https://github.com/typescript-eslint/typescript-eslint/tree/master/packages/parser) licensed under the BSD 2-Clause license
 - [esbuild](https://github.com/evanw/esbuild) licensed under the MIT license
