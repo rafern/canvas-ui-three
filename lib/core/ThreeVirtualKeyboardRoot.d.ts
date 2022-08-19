@@ -12,10 +12,10 @@ export declare class ThreeVirtualKeyboardRoot extends ThreeRoot {
     /**
      * Creates a new ThreeVirtualKeyboardRoot.
      *
-     * Sets {@link child} to a new {@link VirtualKeyboard} with the given
+     * Sets {@link Root#child} to a new {@link VirtualKeyboard} with the given
      * keyboard and {@link VirtualKeyboardTemplate | keyboard template},
-     * {@link pointerStyleHandler}, {@link transformAlgorithm} and
-     * {@link child}'s {@link Widget.inheritedTheme | inherited theme}.
+     * {@link Root#pointerStyleHandler}, {@link ThreeRoot#transformAlgorithm}
+     * and {@link Root#child}'s {@link Widget#inheritedTheme | inherited theme}.
      */
     constructor(keyboardDriver: KeyboardDriver, properties?: VirtualKeyboardRootProperties & ThreeRootProperties);
     /**

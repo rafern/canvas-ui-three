@@ -1,982 +1,545 @@
-<!doctype html>
-<html class="default no-js">
-<head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>ThreeRayPointerDriver | @rafern/canvas-ui-three</title>
-	<meta name="description" content="Documentation for @rafern/canvas-ui-three">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="../assets/css/main.css">
-	<script async src="../assets/js/search.js" id="search-script"></script>
-</head>
-<body>
-<header>
-	<div class="tsd-page-toolbar">
-		<div class="container">
-			<div class="table-wrap">
-				<div class="table-cell" id="tsd-search" data-index="../assets/js/search.json" data-base="..">
-					<div class="field">
-						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
-						<input id="tsd-search-field" type="text" />
-					</div>
-					<ul class="results">
-						<li class="state loading">Preparing search index...</li>
-						<li class="state failure">The search index is not available</li>
-					</ul>
-					<a href="../index.html" class="title">@rafern/canvas-ui-three</a>
-				</div>
-				<div class="table-cell" id="tsd-widgets">
-					<div id="tsd-filter">
-						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
-						<div class="tsd-filter-group">
-							<div class="tsd-select" id="tsd-filter-visibility">
-								<span class="tsd-select-label">All</span>
-								<ul class="tsd-select-list">
-									<li data-value="public">Public</li>
-									<li data-value="protected">Public/Protected</li>
-									<li data-value="private" class="selected">All</li>
-								</ul>
-							</div>
-							<input type="checkbox" id="tsd-filter-inherited" checked />
-							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
-							<input type="checkbox" id="tsd-filter-externals" checked />
-							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
-						</div>
-					</div>
-					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="tsd-page-title">
-		<div class="container">
-			<ul class="tsd-breadcrumb">
-				<li>
-					<a href="../modules.html">@rafern/canvas-ui-three</a>
-				</li>
-				<li>
-					<a href="ThreeRayPointerDriver.html">ThreeRayPointerDriver</a>
-				</li>
-			</ul>
-			<h1>Class ThreeRayPointerDriver</h1>
-		</div>
-	</div>
-</header>
+<!DOCTYPE html><html class="default" lang="en"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="IE=edge"/><title>ThreeRayPointerDriver | @rafern/canvas-ui-three</title><meta name="description" content="Documentation for @rafern/canvas-ui-three"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="stylesheet" href="../assets/style.css"/><link rel="stylesheet" href="../assets/highlight.css"/><script async src="../assets/search.js" id="search-script"></script></head><body><script>document.documentElement.dataset.theme = localStorage.getItem("tsd-theme") || "os"</script><header class="tsd-page-toolbar">
+<div class="tsd-toolbar-contents container">
+<div class="table-cell" id="tsd-search" data-base="..">
+<div class="field"><label for="tsd-search-field" class="tsd-widget search no-caption"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M15.7824 13.833L12.6666 10.7177C12.5259 10.5771 12.3353 10.499 12.1353 10.499H11.6259C12.4884 9.39596 13.001 8.00859 13.001 6.49937C13.001 2.90909 10.0914 0 6.50048 0C2.90959 0 0 2.90909 0 6.49937C0 10.0896 2.90959 12.9987 6.50048 12.9987C8.00996 12.9987 9.39756 12.4863 10.5008 11.6239V12.1332C10.5008 12.3332 10.5789 12.5238 10.7195 12.6644L13.8354 15.7797C14.1292 16.0734 14.6042 16.0734 14.8948 15.7797L15.7793 14.8954C16.0731 14.6017 16.0731 14.1267 15.7824 13.833ZM6.50048 10.499C4.29094 10.499 2.50018 8.71165 2.50018 6.49937C2.50018 4.29021 4.28781 2.49976 6.50048 2.49976C8.71001 2.49976 10.5008 4.28708 10.5008 6.49937C10.5008 8.70852 8.71314 10.499 6.50048 10.499Z" fill="var(--color-text)"></path></svg></label><input type="text" id="tsd-search-field" aria-label="Search"/></div>
+<ul class="results">
+<li class="state loading">Preparing search index...</li>
+<li class="state failure">The search index is not available</li></ul><a href="../index.html" class="title">@rafern/canvas-ui-three</a></div>
+<div class="table-cell" id="tsd-widgets"><a href="#" class="tsd-widget menu no-caption" data-toggle="menu" aria-label="Menu"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><rect x="1" y="3" width="14" height="2" fill="var(--color-text)"></rect><rect x="1" y="7" width="14" height="2" fill="var(--color-text)"></rect><rect x="1" y="11" width="14" height="2" fill="var(--color-text)"></rect></svg></a></div></div></header>
 <div class="container container-main">
-	<div class="row">
-		<div class="col-8 col-content">
-			<section class="tsd-panel tsd-hierarchy">
-				<h3>Hierarchy</h3>
-				<ul class="tsd-hierarchy">
-					<li>
-						<span class="tsd-signature-type">RayPointerDriver</span>
-						<ul class="tsd-hierarchy">
-							<li>
-								<span class="target">ThreeRayPointerDriver</span>
-							</li>
-						</ul>
-					</li>
-				</ul>
-			</section>
-			<section class="tsd-panel-group tsd-index-group">
-				<h2>Index</h2>
-				<section class="tsd-panel tsd-index-panel">
-					<div class="tsd-index-content">
-						<section class="tsd-index-section ">
-							<h3>Constructors</h3>
-							<ul class="tsd-index-list">
-								<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite"><a href="ThreeRayPointerDriver.html#constructor" class="tsd-kind-icon">constructor</a></li>
-							</ul>
-						</section>
-						<section class="tsd-index-section tsd-is-private-protected">
-							<h3>Properties</h3>
-							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected tsd-is-external"><a href="ThreeRayPointerDriver.html#hints" class="tsd-kind-icon">hints</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="ThreeRayPointerDriver.html#raycaster" class="tsd-kind-icon">raycaster</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected tsd-is-external"><a href="ThreeRayPointerDriver.html#sources" class="tsd-kind-icon">sources</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected tsd-is-external"><a href="ThreeRayPointerDriver.html#states" class="tsd-kind-icon">states</a></li>
-							</ul>
-						</section>
-						<section class="tsd-index-section ">
-							<h3>Methods</h3>
-							<ul class="tsd-index-list">
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-external"><a href="ThreeRayPointerDriver.html#addSource" class="tsd-kind-icon">add<wbr>Source</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="ThreeRayPointerDriver.html#castRay" class="tsd-kind-icon">cast<wbr>Ray</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-external"><a href="ThreeRayPointerDriver.html#getPointerHint" class="tsd-kind-icon">get<wbr>Pointer<wbr>Hint</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-external"><a href="ThreeRayPointerDriver.html#handlePointerRay" class="tsd-kind-icon">handle<wbr>Pointer<wbr>Ray</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-external"><a href="ThreeRayPointerDriver.html#leaveAnyPointer" class="tsd-kind-icon">leave<wbr>Any<wbr>Pointer</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-external"><a href="ThreeRayPointerDriver.html#leavePointer" class="tsd-kind-icon">leave<wbr>Pointer</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-external"><a href="ThreeRayPointerDriver.html#movePointer" class="tsd-kind-icon">move<wbr>Pointer</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-external"><a href="ThreeRayPointerDriver.html#onDisable" class="tsd-kind-icon">on<wbr>Disable</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-external"><a href="ThreeRayPointerDriver.html#onEnable" class="tsd-kind-icon">on<wbr>Enable</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-external"><a href="ThreeRayPointerDriver.html#onFocusCapturerChanged" class="tsd-kind-icon">on<wbr>Focus<wbr>Capturer<wbr>Changed</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-external"><a href="ThreeRayPointerDriver.html#onFocusChanged" class="tsd-kind-icon">on<wbr>Focus<wbr>Changed</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-external"><a href="ThreeRayPointerDriver.html#registerPointer" class="tsd-kind-icon">register<wbr>Pointer</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected tsd-is-external"><a href="ThreeRayPointerDriver.html#setPointerHint" class="tsd-kind-icon">set<wbr>Pointer<wbr>Hint</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-external"><a href="ThreeRayPointerDriver.html#unregisterPointer" class="tsd-kind-icon">unregister<wbr>Pointer</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-external"><a href="ThreeRayPointerDriver.html#update" class="tsd-kind-icon">update</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-external"><a href="ThreeRayPointerDriver.html#wheelPointer" class="tsd-kind-icon">wheel<wbr>Pointer</a></li>
-							</ul>
-						</section>
-					</div>
-				</section>
-			</section>
-			<section class="tsd-panel-group tsd-member-group ">
-				<h2>Constructors</h2>
-				<section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite">
-					<a name="constructor" class="tsd-anchor"></a>
-					<h3>constructor</h3>
-					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Three<wbr>Ray<wbr>Pointer<wbr>Driver<span class="tsd-signature-symbol">(</span>camera<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Camera</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="ThreeRayPointerDriver.html" class="tsd-signature-type" data-tsd-kind="Class">ThreeRayPointerDriver</a></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<p>Overrides RayPointerDriver.constructor</p>
-								<ul>
-									<li>Defined in <a href="https://github.com/playkostudios/canvas-ui-three/blob/49881c6/src/drivers/ThreeRayPointerDriver.ts#L8">src/drivers/ThreeRayPointerDriver.ts:8</a></li>
-								</ul>
-							</aside>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>camera: <span class="tsd-signature-type">Camera</span></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="ThreeRayPointerDriver.html" class="tsd-signature-type" data-tsd-kind="Class">ThreeRayPointerDriver</a></h4>
-						</li>
-					</ul>
-				</section>
-			</section>
-			<section class="tsd-panel-group tsd-member-group tsd-is-private-protected">
-				<h2>Properties</h2>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected tsd-is-external">
-					<a name="hints" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagProtected">Protected</span> hints</h3>
-					<div class="tsd-signature tsd-kind-icon">hints<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Map</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">PointerHint</span><span class="tsd-signature-symbol">&gt;</span></div>
-					<aside class="tsd-sources">
-						<p>Inherited from RayPointerDriver.hints</p>
-						<ul>
-							<li>Defined in node_modules/@rafern/canvas-ui/lib/drivers/PointerDriver.d.ts:38</li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>The {@link PointerHint | hints} for each pointer. The keys are pointer
-							IDs, while the values are that pointer&#39;s hint.</p>
-						</div>
-						<p>See <a href="ThreeRayPointerDriver.html#getPointerHint">getPointerHint</a></p>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
-					<a name="raycaster" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagPrivate">Private</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> raycaster</h3>
-					<div class="tsd-signature tsd-kind-icon">raycaster<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Raycaster</span><span class="tsd-signature-symbol"> = ...</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/playkostudios/canvas-ui-three/blob/49881c6/src/drivers/ThreeRayPointerDriver.ts#L6">src/drivers/ThreeRayPointerDriver.ts:6</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected tsd-is-external">
-					<a name="sources" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagProtected">Protected</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> sources</h3>
-					<div class="tsd-signature tsd-kind-icon">sources<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Set</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">RayPointerSource</span><span class="tsd-signature-symbol">&gt;</span></div>
-					<aside class="tsd-sources">
-						<p>Inherited from RayPointerDriver.sources</p>
-						<ul>
-							<li>Defined in node_modules/@rafern/canvas-ui/lib/drivers/RayPointerDriver.d.ts:16</li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>The sources which this is assigned to</p>
-						</div>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected tsd-is-external">
-					<a name="states" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagProtected">Protected</span> states</h3>
-					<div class="tsd-signature tsd-kind-icon">states<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Map</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Root</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">PointerDriverState</span><span class="tsd-signature-symbol">&gt;</span></div>
-					<aside class="tsd-sources">
-						<p>Inherited from RayPointerDriver.states</p>
-						<ul>
-							<li>Defined in node_modules/@rafern/canvas-ui/lib/drivers/PointerDriver.d.ts:29</li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>The current state for each registered and enabled root. Contains whether
-								each root is pressing, hovering, which pointer is bound to it and its
-							event queue</p>
-						</div>
-					</div>
-				</section>
-			</section>
-			<section class="tsd-panel-group tsd-member-group ">
-				<h2>Methods</h2>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-external">
-					<a name="addSource" class="tsd-anchor"></a>
-					<h3>add<wbr>Source</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-external">
-						<li class="tsd-signature tsd-kind-icon">add<wbr>Source<span class="tsd-signature-symbol">(</span>source<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">RayPointerSource</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<p>Inherited from RayPointerDriver.addSource</p>
-								<ul>
-									<li>Defined in node_modules/@rafern/canvas-ui/lib/drivers/RayPointerDriver.d.ts:38</li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Add a source. Assigns itself to the given source.</p>
-								</div>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>source: <span class="tsd-signature-type">RayPointerSource</span></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
-					<a name="castRay" class="tsd-anchor"></a>
-					<h3>cast<wbr>Ray</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
-						<li class="tsd-signature tsd-kind-icon">cast<wbr>Ray<span class="tsd-signature-symbol">(</span>origin<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">]</span>, direction<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><a href="ThreeRoot.html" class="tsd-signature-type" data-tsd-kind="Class">ThreeRoot</a><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">]</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<p>Overrides RayPointerDriver.castRay</p>
-								<ul>
-									<li>Defined in <a href="https://github.com/playkostudios/canvas-ui-three/blob/49881c6/src/drivers/ThreeRayPointerDriver.ts#L14">src/drivers/ThreeRayPointerDriver.ts:14</a></li>
-								</ul>
-							</aside>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>origin: <span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">]</span></h5>
-								</li>
-								<li>
-									<h5>direction: <span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">]</span></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><a href="ThreeRoot.html" class="tsd-signature-type" data-tsd-kind="Class">ThreeRoot</a><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">]</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-external">
-					<a name="getPointerHint" class="tsd-anchor"></a>
-					<h3>get<wbr>Pointer<wbr>Hint</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-external">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Pointer<wbr>Hint<span class="tsd-signature-symbol">(</span>pointer<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">PointerHint</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<p>Inherited from RayPointerDriver.getPointerHint</p>
-								<ul>
-									<li>Defined in node_modules/@rafern/canvas-ui/lib/drivers/PointerDriver.d.ts:133</li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Get a pointer&#39;s {@link PointerHint | hint}.</p>
-								</div>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>pointer: <span class="tsd-signature-type">number</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>The registered pointer ID</p>
-									</div>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">PointerHint</span></h4>
-							<p>Returns the given pointer ID&#39;s hint. If the pointer ID is not registered, {@link PointerHint.None} is returned.</p>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-external">
-					<a name="handlePointerRay" class="tsd-anchor"></a>
-					<h3>handle<wbr>Pointer<wbr>Ray</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-external">
-						<li class="tsd-signature tsd-kind-icon">handle<wbr>Pointer<wbr>Ray<span class="tsd-signature-symbol">(</span>pointer<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, pressing<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span>, origin<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">]</span>, direction<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">]</span>, shift<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span>, ctrl<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span>, alt<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<p>Inherited from RayPointerDriver.handlePointerRay</p>
-								<ul>
-									<li>Defined in node_modules/@rafern/canvas-ui/lib/drivers/RayPointerDriver.d.ts:36</li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Receive a ray from a {@link RayPointerSource}.</p>
-								</div>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>pointer: <span class="tsd-signature-type">number</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>The source&#39;s pointer ID, given when setting the source&#39;s sink</p>
-									</div>
-								</li>
-								<li>
-									<h5>pressing: <span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>Is the pointer pressed? If null, then the last pressing state will be used. A bitmask where each set bit represents a different button being pressed</p>
-									</div>
-								</li>
-								<li>
-									<h5>origin: <span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">]</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>The world position where the ray is starting</p>
-									</div>
-								</li>
-								<li>
-									<h5>direction: <span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">]</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>A normalised vector representing the ray&#39;s direction. Not a euler rotation nor a quaternion</p>
-									</div>
-								</li>
-								<li>
-									<h5>shift: <span class="tsd-signature-type">boolean</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>Is shift being pressed?</p>
-									</div>
-								</li>
-								<li>
-									<h5>ctrl: <span class="tsd-signature-type">boolean</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>Is control being pressed?</p>
-									</div>
-								</li>
-								<li>
-									<h5>alt: <span class="tsd-signature-type">boolean</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>Is alt being pressed?</p>
-									</div>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-external">
-					<a name="leaveAnyPointer" class="tsd-anchor"></a>
-					<h3>leave<wbr>Any<wbr>Pointer</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-external">
-						<li class="tsd-signature tsd-kind-icon">leave<wbr>Any<wbr>Pointer<span class="tsd-signature-symbol">(</span>pointer<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<p>Inherited from RayPointerDriver.leaveAnyPointer</p>
-								<ul>
-									<li>Defined in node_modules/@rafern/canvas-ui/lib/drivers/PointerDriver.d.ts:103</li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Queue up a {@link Leave} event to any root with the given pointer
-										assigned. Event will only be queued if the root was being hovered.
-									Pointer will also be unassigned from root.</p>
-								</div>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>pointer: <span class="tsd-signature-type">number</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>The registered pointer ID</p>
-									</div>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-external">
-					<a name="leavePointer" class="tsd-anchor"></a>
-					<h3>leave<wbr>Pointer</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-external">
-						<li class="tsd-signature tsd-kind-icon">leave<wbr>Pointer<span class="tsd-signature-symbol">(</span>root<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Root</span>, pointer<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<p>Inherited from RayPointerDriver.leavePointer</p>
-								<ul>
-									<li>Defined in node_modules/@rafern/canvas-ui/lib/drivers/PointerDriver.d.ts:95</li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Queue up a {@link Leave} event to a given root. Event will only be queued
-									if the root was being hovered.</p>
-								</div>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>root: <span class="tsd-signature-type">Root</span></h5>
-								</li>
-								<li>
-									<h5>pointer: <span class="tsd-signature-type">number</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>The registered pointer ID</p>
-									</div>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-external">
-					<a name="movePointer" class="tsd-anchor"></a>
-					<h3>move<wbr>Pointer</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-external">
-						<li class="tsd-signature tsd-kind-icon">move<wbr>Pointer<span class="tsd-signature-symbol">(</span>root<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Root</span>, pointer<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, xNorm<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, yNorm<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, pressing<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span>, shift<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span>, ctrl<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span>, alt<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<p>Inherited from RayPointerDriver.movePointer</p>
-								<ul>
-									<li>Defined in node_modules/@rafern/canvas-ui/lib/drivers/PointerDriver.d.ts:88</li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Queue up a pointer event to a given root. The type of
-										{@link PointerEvent} is decided automatically based on the root&#39;s state
-									and whether its pressing or not.</p>
-								</div>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>root: <span class="tsd-signature-type">Root</span></h5>
-								</li>
-								<li>
-									<h5>pointer: <span class="tsd-signature-type">number</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>The registered pointer ID</p>
-									</div>
-								</li>
-								<li>
-									<h5>xNorm: <span class="tsd-signature-type">number</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>The normalised (non-integer range from 0 to 1) X coordinate of the pointer event. 0 is the left edge of the root, while 1 is the right edge of the root.</p>
-									</div>
-								</li>
-								<li>
-									<h5>yNorm: <span class="tsd-signature-type">number</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>The normalised (non-integer range from 0 to 1) Y coordinate of the pointer event. 0 is the top edge of the root, while 1 is the bottom edge of the root.</p>
-									</div>
-								</li>
-								<li>
-									<h5>pressing: <span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>Is the pointer pressed? If null, then the last pressing state will be used. A bitmask where each set bit represents a different button being pressed</p>
-									</div>
-								</li>
-								<li>
-									<h5>shift: <span class="tsd-signature-type">boolean</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>Is shift being pressed?</p>
-									</div>
-								</li>
-								<li>
-									<h5>ctrl: <span class="tsd-signature-type">boolean</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>Is control being pressed?</p>
-									</div>
-								</li>
-								<li>
-									<h5>alt: <span class="tsd-signature-type">boolean</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>Is alt being pressed?</p>
-										<p>If null, the last pressing state is used, meaning that the pressing state
-											has not changed. Useful if getting pointer movement in an event based
-											environment where you only know when a pointer press occurs, but not if
-										the pointer is pressed or not</p>
-									</div>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-external">
-					<a name="onDisable" class="tsd-anchor"></a>
-					<h3>on<wbr>Disable</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-external">
-						<li class="tsd-signature tsd-kind-icon">on<wbr>Disable<span class="tsd-signature-symbol">(</span>root<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Root</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<p>Inherited from RayPointerDriver.onDisable</p>
-								<ul>
-									<li>Defined in node_modules/@rafern/canvas-ui/lib/drivers/PointerDriver.d.ts:142</li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Dispatches a leave event for the disabled root and deletes the state of
-									the disabled root from <a href="ThreeRayPointerDriver.html#states">states</a>.</p>
-								</div>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>root: <span class="tsd-signature-type">Root</span></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-external">
-					<a name="onEnable" class="tsd-anchor"></a>
-					<h3>on<wbr>Enable</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-external">
-						<li class="tsd-signature tsd-kind-icon">on<wbr>Enable<span class="tsd-signature-symbol">(</span>root<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Root</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<p>Inherited from RayPointerDriver.onEnable</p>
-								<ul>
-									<li>Defined in node_modules/@rafern/canvas-ui/lib/drivers/PointerDriver.d.ts:137</li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Creates a state for the enabled root in <a href="ThreeRayPointerDriver.html#states">states</a>.</p>
-								</div>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>root: <span class="tsd-signature-type">Root</span></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-external">
-					<a name="onFocusCapturerChanged" class="tsd-anchor"></a>
-					<h3>on<wbr>Focus<wbr>Capturer<wbr>Changed</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-external">
-						<li class="tsd-signature tsd-kind-icon">on<wbr>Focus<wbr>Capturer<wbr>Changed<span class="tsd-signature-symbol">(</span>_root<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Root</span>, _focusType<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">FocusType</span>, _oldCapturer<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Widget</span>, _newCapturer<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Widget</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<p>Inherited from RayPointerDriver.onFocusCapturerChanged</p>
-								<ul>
-									<li>Defined in node_modules/@rafern/canvas-ui/lib/drivers/PointerDriver.d.ts:149</li>
-								</ul>
-							</aside>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>_root: <span class="tsd-signature-type">Root</span></h5>
-								</li>
-								<li>
-									<h5>_focusType: <span class="tsd-signature-type">FocusType</span></h5>
-								</li>
-								<li>
-									<h5>_oldCapturer: <span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Widget</span></h5>
-								</li>
-								<li>
-									<h5>_newCapturer: <span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Widget</span></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-external">
-					<a name="onFocusChanged" class="tsd-anchor"></a>
-					<h3>on<wbr>Focus<wbr>Changed</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-external">
-						<li class="tsd-signature tsd-kind-icon">on<wbr>Focus<wbr>Changed<span class="tsd-signature-symbol">(</span>_root<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Root</span>, _focusType<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">FocusType</span>, _newFocus<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Widget</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<p>Inherited from RayPointerDriver.onFocusChanged</p>
-								<ul>
-									<li>Defined in node_modules/@rafern/canvas-ui/lib/drivers/PointerDriver.d.ts:148</li>
-								</ul>
-							</aside>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>_root: <span class="tsd-signature-type">Root</span></h5>
-								</li>
-								<li>
-									<h5>_focusType: <span class="tsd-signature-type">FocusType</span></h5>
-								</li>
-								<li>
-									<h5>_newFocus: <span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Widget</span></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-external">
-					<a name="registerPointer" class="tsd-anchor"></a>
-					<h3>register<wbr>Pointer</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-external">
-						<li class="tsd-signature tsd-kind-icon">register<wbr>Pointer<span class="tsd-signature-symbol">(</span>dragToScroll<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<p>Inherited from RayPointerDriver.registerPointer</p>
-								<ul>
-									<li>Defined in node_modules/@rafern/canvas-ui/lib/drivers/PointerDriver.d.ts:51</li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Register a new pointer.</p>
-								</div>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> dragToScroll: <span class="tsd-signature-type">boolean</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>If true, then dragging will result in PointerWheel events if no widget captures the events.</p>
-									</div>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
-							<p>Returns {@link nextPointerID} and increments it</p>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected tsd-is-external">
-					<a name="setPointerHint" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagProtected">Protected</span> set<wbr>Pointer<wbr>Hint</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected tsd-is-external">
-						<li class="tsd-signature tsd-kind-icon">set<wbr>Pointer<wbr>Hint<span class="tsd-signature-symbol">(</span>pointer<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, hint<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">PointerHint</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<p>Inherited from RayPointerDriver.setPointerHint</p>
-								<ul>
-									<li>Defined in node_modules/@rafern/canvas-ui/lib/drivers/RayPointerDriver.d.ts:39</li>
-								</ul>
-							</aside>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>pointer: <span class="tsd-signature-type">number</span></h5>
-								</li>
-								<li>
-									<h5>hint: <span class="tsd-signature-type">PointerHint</span></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-external">
-					<a name="unregisterPointer" class="tsd-anchor"></a>
-					<h3>unregister<wbr>Pointer</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-external">
-						<li class="tsd-signature tsd-kind-icon">unregister<wbr>Pointer<span class="tsd-signature-symbol">(</span>pointer<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<p>Inherited from RayPointerDriver.unregisterPointer</p>
-								<ul>
-									<li>Defined in node_modules/@rafern/canvas-ui/lib/drivers/PointerDriver.d.ts:59</li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Unregister a pointer.</p>
-								</div>
-								<p>If a root has this pointer bound to it, the pointer is unbound from the
-									root, a Leave event is queued to the root and the hovering and pressing
-								state of the root is set to false.</p>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>pointer: <span class="tsd-signature-type">number</span></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-external">
-					<a name="update" class="tsd-anchor"></a>
-					<h3>update</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-external">
-						<li class="tsd-signature tsd-kind-icon">update<span class="tsd-signature-symbol">(</span>root<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Root</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<p>Inherited from RayPointerDriver.update</p>
-								<ul>
-									<li>Defined in node_modules/@rafern/canvas-ui/lib/drivers/PointerDriver.d.ts:147</li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Dispatches all queued events (found in <a href="ThreeRayPointerDriver.html#states">states</a>) for the root and
-									clears its event queue</p>
-								</div>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>root: <span class="tsd-signature-type">Root</span></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-external">
-					<a name="wheelPointer" class="tsd-anchor"></a>
-					<h3>wheel<wbr>Pointer</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-external">
-						<li class="tsd-signature tsd-kind-icon">wheel<wbr>Pointer<span class="tsd-signature-symbol">(</span>root<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Root</span>, pointer<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, xNorm<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, yNorm<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, deltaX<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, deltaY<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, shift<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span>, ctrl<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span>, alt<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<p>Inherited from RayPointerDriver.wheelPointer</p>
-								<ul>
-									<li>Defined in node_modules/@rafern/canvas-ui/lib/drivers/PointerDriver.d.ts:117</li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Queue up a mouse wheel event in a given 2D direction. Event will only be
-									queued if the root was being hovered.</p>
-								</div>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>root: <span class="tsd-signature-type">Root</span></h5>
-								</li>
-								<li>
-									<h5>pointer: <span class="tsd-signature-type">number</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>The registered pointer ID</p>
-									</div>
-								</li>
-								<li>
-									<h5>xNorm: <span class="tsd-signature-type">number</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>The normalised (non-integer range from 0 to 1) X coordinate of the pointer event. 0 is the left edge of the root, while 1 is the right edge of the root.</p>
-									</div>
-								</li>
-								<li>
-									<h5>yNorm: <span class="tsd-signature-type">number</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>The normalised (non-integer range from 0 to 1) Y coordinate of the pointer event. 0 is the top edge of the root, while 1 is the bottom edge of the root.</p>
-									</div>
-								</li>
-								<li>
-									<h5>deltaX: <span class="tsd-signature-type">number</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>How much was scrolled horizontally, in pixels</p>
-									</div>
-								</li>
-								<li>
-									<h5>deltaY: <span class="tsd-signature-type">number</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>How much was scrolled vertically, in pixels</p>
-									</div>
-								</li>
-								<li>
-									<h5>shift: <span class="tsd-signature-type">boolean</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>Is shift being pressed?</p>
-									</div>
-								</li>
-								<li>
-									<h5>ctrl: <span class="tsd-signature-type">boolean</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>Is control being pressed?</p>
-									</div>
-								</li>
-								<li>
-									<h5>alt: <span class="tsd-signature-type">boolean</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>Is alt being pressed?</p>
-									</div>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-						</li>
-					</ul>
-				</section>
-			</section>
-		</div>
-		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
-			<nav class="tsd-navigation primary">
-				<ul>
-					<li class=" ">
-						<a href="../modules.html">Exports</a>
-					</li>
-				</ul>
-			</nav>
-			<nav class="tsd-navigation secondary menu-sticky">
-				<ul class="before-current">
-					<li class=" tsd-kind-class">
-						<a href="MouseRayPointerSource.html" class="tsd-kind-icon">Mouse<wbr>Ray<wbr>Pointer<wbr>Source</a>
-					</li>
-				</ul>
-				<ul class="current">
-					<li class="current tsd-kind-class">
-						<a href="ThreeRayPointerDriver.html" class="tsd-kind-icon">Three<wbr>Ray<wbr>Pointer<wbr>Driver</a>
-						<ul>
-							<li class=" tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite">
-								<a href="ThreeRayPointerDriver.html#constructor" class="tsd-kind-icon">constructor</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected tsd-is-external">
-								<a href="ThreeRayPointerDriver.html#hints" class="tsd-kind-icon">hints</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
-								<a href="ThreeRayPointerDriver.html#raycaster" class="tsd-kind-icon">raycaster</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected tsd-is-external">
-								<a href="ThreeRayPointerDriver.html#sources" class="tsd-kind-icon">sources</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected tsd-is-external">
-								<a href="ThreeRayPointerDriver.html#states" class="tsd-kind-icon">states</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-external">
-								<a href="ThreeRayPointerDriver.html#addSource" class="tsd-kind-icon">add<wbr>Source</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
-								<a href="ThreeRayPointerDriver.html#castRay" class="tsd-kind-icon">cast<wbr>Ray</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-external">
-								<a href="ThreeRayPointerDriver.html#getPointerHint" class="tsd-kind-icon">get<wbr>Pointer<wbr>Hint</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-external">
-								<a href="ThreeRayPointerDriver.html#handlePointerRay" class="tsd-kind-icon">handle<wbr>Pointer<wbr>Ray</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-external">
-								<a href="ThreeRayPointerDriver.html#leaveAnyPointer" class="tsd-kind-icon">leave<wbr>Any<wbr>Pointer</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-external">
-								<a href="ThreeRayPointerDriver.html#leavePointer" class="tsd-kind-icon">leave<wbr>Pointer</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-external">
-								<a href="ThreeRayPointerDriver.html#movePointer" class="tsd-kind-icon">move<wbr>Pointer</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-external">
-								<a href="ThreeRayPointerDriver.html#onDisable" class="tsd-kind-icon">on<wbr>Disable</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-external">
-								<a href="ThreeRayPointerDriver.html#onEnable" class="tsd-kind-icon">on<wbr>Enable</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-external">
-								<a href="ThreeRayPointerDriver.html#onFocusCapturerChanged" class="tsd-kind-icon">on<wbr>Focus<wbr>Capturer<wbr>Changed</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-external">
-								<a href="ThreeRayPointerDriver.html#onFocusChanged" class="tsd-kind-icon">on<wbr>Focus<wbr>Changed</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-external">
-								<a href="ThreeRayPointerDriver.html#registerPointer" class="tsd-kind-icon">register<wbr>Pointer</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected tsd-is-external">
-								<a href="ThreeRayPointerDriver.html#setPointerHint" class="tsd-kind-icon">set<wbr>Pointer<wbr>Hint</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-external">
-								<a href="ThreeRayPointerDriver.html#unregisterPointer" class="tsd-kind-icon">unregister<wbr>Pointer</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-external">
-								<a href="ThreeRayPointerDriver.html#update" class="tsd-kind-icon">update</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-external">
-								<a href="ThreeRayPointerDriver.html#wheelPointer" class="tsd-kind-icon">wheel<wbr>Pointer</a>
-							</li>
-						</ul>
-					</li>
-				</ul>
-				<ul class="after-current">
-					<li class=" tsd-kind-class">
-						<a href="ThreeRoot.html" class="tsd-kind-icon">Three<wbr>Root</a>
-					</li>
-					<li class=" tsd-kind-class">
-						<a href="ThreeVirtualKeyboardRoot.html" class="tsd-kind-icon">Three<wbr>Virtual<wbr>Keyboard<wbr>Root</a>
-					</li>
-					<li class=" tsd-kind-class">
-						<a href="XRControllerRayPointerSource.html" class="tsd-kind-icon">XRController<wbr>Ray<wbr>Pointer<wbr>Source</a>
-					</li>
-					<li class=" tsd-kind-interface">
-						<a href="../interfaces/XRControllerSourceState.html" class="tsd-kind-icon">XRController<wbr>Source<wbr>State</a>
-					</li>
-					<li class=" tsd-kind-type-alias">
-						<a href="../modules.html#TransformAlgorithm" class="tsd-kind-icon">Transform<wbr>Algorithm</a>
-					</li>
-				</ul>
-			</nav>
-		</div>
-	</div>
+<div class="col-8 col-content">
+<div class="tsd-page-title">
+<ul class="tsd-breadcrumb">
+<li><a href="../modules.html">@rafern/canvas-ui-three</a></li>
+<li><a href="ThreeRayPointerDriver.html">ThreeRayPointerDriver</a></li></ul>
+<h1>Class ThreeRayPointerDriver</h1></div>
+<section class="tsd-panel tsd-hierarchy">
+<h4>Hierarchy</h4>
+<ul class="tsd-hierarchy">
+<li><a href="https://rafern.github.io/canvas-ui/classes/RayPointerDriver.html" class="tsd-signature-type external" target="_blank">RayPointerDriver</a>
+<ul class="tsd-hierarchy">
+<li><span class="target">ThreeRayPointerDriver</span></li></ul></li></ul></section><aside class="tsd-sources">
+<ul>
+<li>Defined in <a href="https://github.com/playkostudios/canvas-ui-three/blob/7eac2d7/src/drivers/ThreeRayPointerDriver.ts#L5">src/drivers/ThreeRayPointerDriver.ts:5</a></li></ul></aside>
+<section class="tsd-panel-group tsd-index-group">
+<section class="tsd-panel tsd-index-panel">
+<details class="tsd-index-content tsd-index-accordion" open><summary class="tsd-accordion-summary tsd-index-summary">
+<h5 class="tsd-index-heading uppercase" role="button" aria-expanded="false" tabIndex=0><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M1.5 5.50969L8 11.6609L14.5 5.50969L12.5466 3.66086L8 7.96494L3.45341 3.66086L1.5 5.50969Z" fill="var(--color-text)"></path></svg> Index</h5></summary>
+<div class="tsd-accordion-details">
+<section class="tsd-index-section">
+<h3 class="tsd-index-heading">Constructors</h3>
+<div class="tsd-index-list"><a href="ThreeRayPointerDriver.html#constructor" class="tsd-index-link tsd-kind-constructor tsd-parent-kind-class"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><rect fill="var(--color-icon-background)" stroke="#4D7FFF" stroke-width="1.5" x="1" y="1" width="22" height="22" rx="12" id="icon-512-path"></rect><path d="M11.898 16.1201C11.098 16.1201 10.466 15.8961 10.002 15.4481C9.53803 15.0001 9.30603 14.3841 9.30603 13.6001V9.64012C9.30603 8.85612 9.53803 8.24012 10.002 7.79212C10.466 7.34412 11.098 7.12012 11.898 7.12012C12.682 7.12012 13.306 7.34812 13.77 7.80412C14.234 8.25212 14.466 8.86412 14.466 9.64012H13.386C13.386 9.14412 13.254 8.76412 12.99 8.50012C12.734 8.22812 12.37 8.09212 11.898 8.09212C11.426 8.09212 11.054 8.22412 10.782 8.48812C10.518 8.75212 10.386 9.13212 10.386 9.62812V13.6001C10.386 14.0961 10.518 14.4801 10.782 14.7521C11.054 15.0161 11.426 15.1481 11.898 15.1481C12.37 15.1481 12.734 15.0161 12.99 14.7521C13.254 14.4801 13.386 14.0961 13.386 13.6001H14.466C14.466 14.3761 14.234 14.9921 13.77 15.4481C13.306 15.8961 12.682 16.1201 11.898 16.1201Z" fill="var(--color-text)" id="icon-512-text"></path></svg><span>constructor</span></a>
+</div></section>
+<section class="tsd-index-section">
+<h3 class="tsd-index-heading">Properties</h3>
+<div class="tsd-index-list"><a href="ThreeRayPointerDriver.html#hints" class="tsd-index-link tsd-kind-property tsd-parent-kind-class tsd-is-protected tsd-is-inherited tsd-is-external"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><rect fill="var(--color-icon-background)" stroke="#FF984D" stroke-width="1.5" x="1" y="1" width="22" height="22" rx="12" id="icon-1024-path"></rect><path d="M9.354 16V7.24H12.174C12.99 7.24 13.638 7.476 14.118 7.948C14.606 8.412 14.85 9.036 14.85 9.82C14.85 10.604 14.606 11.232 14.118 11.704C13.638 12.168 12.99 12.4 12.174 12.4H10.434V16H9.354ZM10.434 11.428H12.174C12.646 11.428 13.022 11.284 13.302 10.996C13.59 10.7 13.734 10.308 13.734 9.82C13.734 9.324 13.59 8.932 13.302 8.644C13.022 8.356 12.646 8.212 12.174 8.212H10.434V11.428Z" fill="var(--color-text)" id="icon-1024-text"></path></svg><span>hints</span></a>
+<a href="ThreeRayPointerDriver.html#raycaster" class="tsd-index-link tsd-kind-property tsd-parent-kind-class tsd-is-private"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>raycaster</span></a>
+<a href="ThreeRayPointerDriver.html#sources" class="tsd-index-link tsd-kind-property tsd-parent-kind-class tsd-is-protected tsd-is-inherited tsd-is-external"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>sources</span></a>
+<a href="ThreeRayPointerDriver.html#states" class="tsd-index-link tsd-kind-property tsd-parent-kind-class tsd-is-protected tsd-is-inherited tsd-is-external"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>states</span></a>
+</div></section>
+<section class="tsd-index-section">
+<h3 class="tsd-index-heading">Methods</h3>
+<div class="tsd-index-list"><a href="ThreeRayPointerDriver.html#addSource" class="tsd-index-link tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-external"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><rect fill="var(--color-icon-background)" stroke="#FF4DB8" stroke-width="1.5" x="1" y="1" width="22" height="22" rx="12" id="icon-2048-path"></rect><path d="M9.162 16V7.24H10.578L11.514 10.072C11.602 10.328 11.674 10.584 11.73 10.84C11.794 11.088 11.842 11.28 11.874 11.416C11.906 11.28 11.954 11.088 12.018 10.84C12.082 10.584 12.154 10.324 12.234 10.06L13.122 7.24H14.538V16H13.482V12.82C13.482 12.468 13.49 12.068 13.506 11.62C13.53 11.172 13.558 10.716 13.59 10.252C13.622 9.78 13.654 9.332 13.686 8.908C13.726 8.476 13.762 8.1 13.794 7.78L12.366 12.16H11.334L9.894 7.78C9.934 8.092 9.97 8.456 10.002 8.872C10.042 9.28 10.078 9.716 10.11 10.18C10.142 10.636 10.166 11.092 10.182 11.548C10.206 12.004 10.218 12.428 10.218 12.82V16H9.162Z" fill="var(--color-text)" id="icon-2048-text"></path></svg><span>add<wbr/>Source</span></a>
+<a href="ThreeRayPointerDriver.html#castRay" class="tsd-index-link tsd-kind-method tsd-parent-kind-class"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-2048-path"></use><use href="#icon-2048-text"></use></svg><span>cast<wbr/>Ray</span></a>
+<a href="ThreeRayPointerDriver.html#getPointerHint" class="tsd-index-link tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-external"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-2048-path"></use><use href="#icon-2048-text"></use></svg><span>get<wbr/>Pointer<wbr/>Hint</span></a>
+<a href="ThreeRayPointerDriver.html#handlePointerRay" class="tsd-index-link tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-external"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-2048-path"></use><use href="#icon-2048-text"></use></svg><span>handle<wbr/>Pointer<wbr/>Ray</span></a>
+<a href="ThreeRayPointerDriver.html#leaveAnyPointer" class="tsd-index-link tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-external"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-2048-path"></use><use href="#icon-2048-text"></use></svg><span>leave<wbr/>Any<wbr/>Pointer</span></a>
+<a href="ThreeRayPointerDriver.html#leavePointer" class="tsd-index-link tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-external"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-2048-path"></use><use href="#icon-2048-text"></use></svg><span>leave<wbr/>Pointer</span></a>
+<a href="ThreeRayPointerDriver.html#movePointer" class="tsd-index-link tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-external"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-2048-path"></use><use href="#icon-2048-text"></use></svg><span>move<wbr/>Pointer</span></a>
+<a href="ThreeRayPointerDriver.html#onDisable" class="tsd-index-link tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-external"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-2048-path"></use><use href="#icon-2048-text"></use></svg><span>on<wbr/>Disable</span></a>
+<a href="ThreeRayPointerDriver.html#onEnable" class="tsd-index-link tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-external"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-2048-path"></use><use href="#icon-2048-text"></use></svg><span>on<wbr/>Enable</span></a>
+<a href="ThreeRayPointerDriver.html#onFocusCapturerChanged" class="tsd-index-link tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-external"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-2048-path"></use><use href="#icon-2048-text"></use></svg><span>on<wbr/>Focus<wbr/>Capturer<wbr/>Changed</span></a>
+<a href="ThreeRayPointerDriver.html#onFocusChanged" class="tsd-index-link tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-external"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-2048-path"></use><use href="#icon-2048-text"></use></svg><span>on<wbr/>Focus<wbr/>Changed</span></a>
+<a href="ThreeRayPointerDriver.html#registerPointer" class="tsd-index-link tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-external"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-2048-path"></use><use href="#icon-2048-text"></use></svg><span>register<wbr/>Pointer</span></a>
+<a href="ThreeRayPointerDriver.html#setPointerHint" class="tsd-index-link tsd-kind-method tsd-parent-kind-class tsd-is-protected tsd-is-inherited tsd-is-external"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-2048-path"></use><use href="#icon-2048-text"></use></svg><span>set<wbr/>Pointer<wbr/>Hint</span></a>
+<a href="ThreeRayPointerDriver.html#unregisterPointer" class="tsd-index-link tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-external"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-2048-path"></use><use href="#icon-2048-text"></use></svg><span>unregister<wbr/>Pointer</span></a>
+<a href="ThreeRayPointerDriver.html#update" class="tsd-index-link tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-external"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-2048-path"></use><use href="#icon-2048-text"></use></svg><span>update</span></a>
+<a href="ThreeRayPointerDriver.html#wheelPointer" class="tsd-index-link tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-external"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-2048-path"></use><use href="#icon-2048-text"></use></svg><span>wheel<wbr/>Pointer</span></a>
+</div></section></div></details></section></section>
+<section class="tsd-panel-group tsd-member-group">
+<h2>Constructors</h2>
+<section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class"><a id="constructor" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><span>constructor</span><a href="#constructor" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none" id="icon-anchor-a"></path><path d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5" id="icon-anchor-b"></path><path d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5" id="icon-anchor-c"></path></svg></a></h3>
+<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
+<li class="tsd-signature tsd-anchor-link" id="constructor.new_ThreeRayPointerDriver">new <wbr/>Three<wbr/>Ray<wbr/>Pointer<wbr/>Driver<span class="tsd-signature-symbol">(</span>camera<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Camera</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="ThreeRayPointerDriver.html" class="tsd-signature-type" data-tsd-kind="Class">ThreeRayPointerDriver</a><a href="#constructor.new_ThreeRayPointerDriver" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></li>
+<li class="tsd-description">
+<div class="tsd-parameters">
+<h4 class="tsd-parameters-title">Parameters</h4>
+<ul class="tsd-parameter-list">
+<li>
+<h5>camera: <span class="tsd-signature-type">Camera</span></h5></li></ul></div>
+<h4 class="tsd-returns-title">Returns <a href="ThreeRayPointerDriver.html" class="tsd-signature-type" data-tsd-kind="Class">ThreeRayPointerDriver</a></h4><aside class="tsd-sources">
+<p>Overrides RayPointerDriver.constructor</p>
+<ul>
+<li>Defined in <a href="https://github.com/playkostudios/canvas-ui-three/blob/7eac2d7/src/drivers/ThreeRayPointerDriver.ts#L8">src/drivers/ThreeRayPointerDriver.ts:8</a></li></ul></aside></li></ul></section></section>
+<section class="tsd-panel-group tsd-member-group">
+<h2>Properties</h2>
+<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-protected tsd-is-inherited tsd-is-external"><a id="hints" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagProtected">Protected</code> <span>hints</span><a href="#hints" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
+<div class="tsd-signature">hints<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Map</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">, </span><a href="https://rafern.github.io/canvas-ui/enums/PointerHint.html" class="tsd-signature-type external" target="_blank">PointerHint</a><span class="tsd-signature-symbol">&gt;</span></div>
+<div class="tsd-comment tsd-typography"><p>The PointerHint | hints for each pointer. The keys are pointer
+IDs, while the values are that pointer&#39;s hint.</p>
+<p>See PointerDriver#getPointerHint</p>
+</div><aside class="tsd-sources">
+<p>Inherited from RayPointerDriver.hints</p>
+<ul>
+<li>Defined in node_modules/@rafern/canvas-ui/lib/drivers/PointerDriver.d.ts:47</li></ul></aside></section>
+<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private"><a id="raycaster" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagPrivate">Private</code> <code class="tsd-tag ts-flagReadonly">Readonly</code> <span>raycaster</span><a href="#raycaster" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
+<div class="tsd-signature">raycaster<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Raycaster</span><span class="tsd-signature-symbol"> = ...</span></div><aside class="tsd-sources">
+<ul>
+<li>Defined in <a href="https://github.com/playkostudios/canvas-ui-three/blob/7eac2d7/src/drivers/ThreeRayPointerDriver.ts#L6">src/drivers/ThreeRayPointerDriver.ts:6</a></li></ul></aside></section>
+<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-protected tsd-is-inherited tsd-is-external"><a id="sources" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagProtected">Protected</code> <code class="tsd-tag ts-flagReadonly">Readonly</code> <span>sources</span><a href="#sources" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
+<div class="tsd-signature">sources<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Set</span><span class="tsd-signature-symbol">&lt;</span><a href="https://rafern.github.io/canvas-ui/interfaces/RayPointerSource.html" class="tsd-signature-type external" target="_blank">RayPointerSource</a><span class="tsd-signature-symbol">&gt;</span></div>
+<div class="tsd-comment tsd-typography"><p>The sources which this is assigned to</p>
+</div><aside class="tsd-sources">
+<p>Inherited from RayPointerDriver.sources</p>
+<ul>
+<li>Defined in node_modules/@rafern/canvas-ui/lib/drivers/RayPointerDriver.d.ts:16</li></ul></aside></section>
+<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-protected tsd-is-inherited tsd-is-external"><a id="states" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagProtected">Protected</code> <span>states</span><a href="#states" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
+<div class="tsd-signature">states<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Map</span><span class="tsd-signature-symbol">&lt;</span><a href="https://rafern.github.io/canvas-ui/classes/Root.html" class="tsd-signature-type external" target="_blank">Root</a><span class="tsd-signature-symbol">, </span><a href="https://rafern.github.io/canvas-ui/interfaces/PointerDriverState.html" class="tsd-signature-type external" target="_blank">PointerDriverState</a><span class="tsd-signature-symbol">&gt;</span></div>
+<div class="tsd-comment tsd-typography"><p>The current state for each registered and enabled root. Contains whether
+each root is pressing, hovering, which pointer is bound to it and its
+event queue</p>
+</div><aside class="tsd-sources">
+<p>Inherited from RayPointerDriver.states</p>
+<ul>
+<li>Defined in node_modules/@rafern/canvas-ui/lib/drivers/PointerDriver.d.ts:36</li></ul></aside></section></section>
+<section class="tsd-panel-group tsd-member-group">
+<h2>Methods</h2>
+<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-external"><a id="addSource" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><span>add<wbr/>Source</span><a href="#addSource" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
+<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-external">
+<li class="tsd-signature tsd-anchor-link" id="addSource.addSource-1">add<wbr/>Source<span class="tsd-signature-symbol">(</span>source<span class="tsd-signature-symbol">: </span><a href="https://rafern.github.io/canvas-ui/interfaces/RayPointerSource.html" class="tsd-signature-type external" target="_blank">RayPointerSource</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span><a href="#addSource.addSource-1" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></li>
+<li class="tsd-description">
+<div class="tsd-comment tsd-typography"><p>Add a source. Assigns itself to the given source.</p>
 </div>
-<footer class="with-border-bottom">
-	<div class="container">
-		<h2>Legend</h2>
-		<div class="tsd-legend-group">
-			<ul class="tsd-legend">
-				<li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
-				<li class="tsd-kind-property tsd-parent-kind-class"><span class="tsd-kind-icon">Property</span></li>
-				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
-				<li class="tsd-kind-accessor tsd-parent-kind-class"><span class="tsd-kind-icon">Accessor</span></li>
-			</ul>
-			<ul class="tsd-legend">
-				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited property</span></li>
-				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited method</span></li>
-				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited accessor</span></li>
-			</ul>
-			<ul class="tsd-legend">
-				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private property</span></li>
-				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private method</span></li>
-			</ul>
-			<ul class="tsd-legend">
-				<li class="tsd-kind-property tsd-parent-kind-interface"><span class="tsd-kind-icon">Property</span></li>
-			</ul>
-		</div>
-	</div>
-</footer>
+<div class="tsd-parameters">
+<h4 class="tsd-parameters-title">Parameters</h4>
+<ul class="tsd-parameter-list">
+<li>
+<h5>source: <a href="https://rafern.github.io/canvas-ui/interfaces/RayPointerSource.html" class="tsd-signature-type external" target="_blank">RayPointerSource</a></h5></li></ul></div>
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
+<p>Inherited from RayPointerDriver.addSource</p>
+<ul>
+<li>Defined in node_modules/@rafern/canvas-ui/lib/drivers/RayPointerDriver.d.ts:38</li></ul></aside></li></ul></section>
+<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class"><a id="castRay" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><span>cast<wbr/>Ray</span><a href="#castRay" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
+<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+<li class="tsd-signature tsd-anchor-link" id="castRay.castRay-1">cast<wbr/>Ray<span class="tsd-signature-symbol">(</span>origin<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">]</span>, direction<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><a href="ThreeRoot.html" class="tsd-signature-type" data-tsd-kind="Class">ThreeRoot</a><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">]</span><a href="#castRay.castRay-1" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></li>
+<li class="tsd-description">
+<div class="tsd-parameters">
+<h4 class="tsd-parameters-title">Parameters</h4>
+<ul class="tsd-parameter-list">
+<li>
+<h5>origin: <span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">]</span></h5></li>
+<li>
+<h5>direction: <span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">]</span></h5></li></ul></div>
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><a href="ThreeRoot.html" class="tsd-signature-type" data-tsd-kind="Class">ThreeRoot</a><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">]</span></h4><aside class="tsd-sources">
+<p>Overrides RayPointerDriver.castRay</p>
+<ul>
+<li>Defined in <a href="https://github.com/playkostudios/canvas-ui-three/blob/7eac2d7/src/drivers/ThreeRayPointerDriver.ts#L14">src/drivers/ThreeRayPointerDriver.ts:14</a></li></ul></aside></li></ul></section>
+<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-external"><a id="getPointerHint" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><span>get<wbr/>Pointer<wbr/>Hint</span><a href="#getPointerHint" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
+<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-external">
+<li class="tsd-signature tsd-anchor-link" id="getPointerHint.getPointerHint-1">get<wbr/>Pointer<wbr/>Hint<span class="tsd-signature-symbol">(</span>pointer<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="https://rafern.github.io/canvas-ui/enums/PointerHint.html" class="tsd-signature-type external" target="_blank">PointerHint</a><a href="#getPointerHint.getPointerHint-1" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></li>
+<li class="tsd-description">
+<div class="tsd-comment tsd-typography"><p>Get a pointer&#39;s PointerHint | hint.</p>
+
+<h3>Returns</h3><p>Returns the given pointer ID&#39;s hint. If the pointer ID is not registered, PointerHint.None is returned.</p>
+</div>
+<div class="tsd-parameters">
+<h4 class="tsd-parameters-title">Parameters</h4>
+<ul class="tsd-parameter-list">
+<li>
+<h5>pointer: <span class="tsd-signature-type">number</span></h5>
+<div class="tsd-comment tsd-typography"><p>The registered pointer ID</p>
+</div></li></ul></div>
+<h4 class="tsd-returns-title">Returns <a href="https://rafern.github.io/canvas-ui/enums/PointerHint.html" class="tsd-signature-type external" target="_blank">PointerHint</a></h4><aside class="tsd-sources">
+<p>Inherited from RayPointerDriver.getPointerHint</p>
+<ul>
+<li>Defined in node_modules/@rafern/canvas-ui/lib/drivers/PointerDriver.d.ts:145</li></ul></aside></li></ul></section>
+<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-external"><a id="handlePointerRay" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><span>handle<wbr/>Pointer<wbr/>Ray</span><a href="#handlePointerRay" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
+<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-external">
+<li class="tsd-signature tsd-anchor-link" id="handlePointerRay.handlePointerRay-1">handle<wbr/>Pointer<wbr/>Ray<span class="tsd-signature-symbol">(</span>pointer<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, pressing<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span>, origin<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">]</span>, direction<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">]</span>, shift<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span>, ctrl<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span>, alt<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span><a href="#handlePointerRay.handlePointerRay-1" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></li>
+<li class="tsd-description">
+<div class="tsd-comment tsd-typography"><p>Receive a ray from a RayPointerSource.</p>
+</div>
+<div class="tsd-parameters">
+<h4 class="tsd-parameters-title">Parameters</h4>
+<ul class="tsd-parameter-list">
+<li>
+<h5>pointer: <span class="tsd-signature-type">number</span></h5>
+<div class="tsd-comment tsd-typography"><p>The source&#39;s pointer ID, given when setting the source&#39;s sink</p>
+</div></li>
+<li>
+<h5>pressing: <span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></h5>
+<div class="tsd-comment tsd-typography"><p>Is the pointer pressed? If null, then the last pressing state will be used. A bitmask where each set bit represents a different button being pressed</p>
+</div></li>
+<li>
+<h5>origin: <span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">]</span></h5>
+<div class="tsd-comment tsd-typography"><p>The world position where the ray is starting</p>
+</div></li>
+<li>
+<h5>direction: <span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">]</span></h5>
+<div class="tsd-comment tsd-typography"><p>A normalised vector representing the ray&#39;s direction. Not a euler rotation nor a quaternion</p>
+</div></li>
+<li>
+<h5>shift: <span class="tsd-signature-type">boolean</span></h5>
+<div class="tsd-comment tsd-typography"><p>Is shift being pressed?</p>
+</div></li>
+<li>
+<h5>ctrl: <span class="tsd-signature-type">boolean</span></h5>
+<div class="tsd-comment tsd-typography"><p>Is control being pressed?</p>
+</div></li>
+<li>
+<h5>alt: <span class="tsd-signature-type">boolean</span></h5>
+<div class="tsd-comment tsd-typography"><p>Is alt being pressed?</p>
+</div></li></ul></div>
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
+<p>Inherited from RayPointerDriver.handlePointerRay</p>
+<ul>
+<li>Defined in node_modules/@rafern/canvas-ui/lib/drivers/RayPointerDriver.d.ts:36</li></ul></aside></li></ul></section>
+<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-external"><a id="leaveAnyPointer" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><span>leave<wbr/>Any<wbr/>Pointer</span><a href="#leaveAnyPointer" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
+<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-external">
+<li class="tsd-signature tsd-anchor-link" id="leaveAnyPointer.leaveAnyPointer-1">leave<wbr/>Any<wbr/>Pointer<span class="tsd-signature-symbol">(</span>pointer<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span><a href="#leaveAnyPointer.leaveAnyPointer-1" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></li>
+<li class="tsd-description">
+<div class="tsd-comment tsd-typography"><p>Queue up a Leave event to any root with the given pointer
+assigned. Event will only be queued if the root was being hovered.
+Pointer will also be unassigned from root.</p>
+</div>
+<div class="tsd-parameters">
+<h4 class="tsd-parameters-title">Parameters</h4>
+<ul class="tsd-parameter-list">
+<li>
+<h5>pointer: <span class="tsd-signature-type">number</span></h5>
+<div class="tsd-comment tsd-typography"><p>The registered pointer ID</p>
+</div></li></ul></div>
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
+<p>Inherited from RayPointerDriver.leaveAnyPointer</p>
+<ul>
+<li>Defined in node_modules/@rafern/canvas-ui/lib/drivers/PointerDriver.d.ts:113</li></ul></aside></li></ul></section>
+<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-external"><a id="leavePointer" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><span>leave<wbr/>Pointer</span><a href="#leavePointer" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
+<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-external">
+<li class="tsd-signature tsd-anchor-link" id="leavePointer.leavePointer-1">leave<wbr/>Pointer<span class="tsd-signature-symbol">(</span>root<span class="tsd-signature-symbol">: </span><a href="https://rafern.github.io/canvas-ui/classes/Root.html" class="tsd-signature-type external" target="_blank">Root</a>, pointer<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span><a href="#leavePointer.leavePointer-1" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></li>
+<li class="tsd-description">
+<div class="tsd-comment tsd-typography"><p>Queue up a Leave event to a given root. Event will only be queued
+if the root was being hovered.</p>
+</div>
+<div class="tsd-parameters">
+<h4 class="tsd-parameters-title">Parameters</h4>
+<ul class="tsd-parameter-list">
+<li>
+<h5>root: <a href="https://rafern.github.io/canvas-ui/classes/Root.html" class="tsd-signature-type external" target="_blank">Root</a></h5></li>
+<li>
+<h5>pointer: <span class="tsd-signature-type">number</span></h5>
+<div class="tsd-comment tsd-typography"><p>The registered pointer ID</p>
+</div></li></ul></div>
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
+<p>Inherited from RayPointerDriver.leavePointer</p>
+<ul>
+<li>Defined in node_modules/@rafern/canvas-ui/lib/drivers/PointerDriver.d.ts:105</li></ul></aside></li></ul></section>
+<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-external"><a id="movePointer" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><span>move<wbr/>Pointer</span><a href="#movePointer" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
+<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-external">
+<li class="tsd-signature tsd-anchor-link" id="movePointer.movePointer-1">move<wbr/>Pointer<span class="tsd-signature-symbol">(</span>root<span class="tsd-signature-symbol">: </span><a href="https://rafern.github.io/canvas-ui/classes/Root.html" class="tsd-signature-type external" target="_blank">Root</a>, pointer<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, xNorm<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, yNorm<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, pressing<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span>, shift<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span>, ctrl<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span>, alt<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span><a href="#movePointer.movePointer-1" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></li>
+<li class="tsd-description">
+<div class="tsd-comment tsd-typography"><p>Queue up a pointer event to a given root. The type of
+PointerEvent is decided automatically based on the root&#39;s state
+and whether its pressing or not.</p>
+</div>
+<div class="tsd-parameters">
+<h4 class="tsd-parameters-title">Parameters</h4>
+<ul class="tsd-parameter-list">
+<li>
+<h5>root: <a href="https://rafern.github.io/canvas-ui/classes/Root.html" class="tsd-signature-type external" target="_blank">Root</a></h5></li>
+<li>
+<h5>pointer: <span class="tsd-signature-type">number</span></h5>
+<div class="tsd-comment tsd-typography"><p>The registered pointer ID</p>
+</div></li>
+<li>
+<h5>xNorm: <span class="tsd-signature-type">number</span></h5>
+<div class="tsd-comment tsd-typography"><p>The normalised (non-integer range from 0 to 1) X coordinate of the pointer event. 0 is the left edge of the root, while 1 is the right edge of the root.</p>
+</div></li>
+<li>
+<h5>yNorm: <span class="tsd-signature-type">number</span></h5>
+<div class="tsd-comment tsd-typography"><p>The normalised (non-integer range from 0 to 1) Y coordinate of the pointer event. 0 is the top edge of the root, while 1 is the bottom edge of the root.</p>
+</div></li>
+<li>
+<h5>pressing: <span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></h5>
+<div class="tsd-comment tsd-typography"><p>Is the pointer pressed? If null, then the last pressing state will be used. A bitmask where each set bit represents a different button being pressed</p>
+</div></li>
+<li>
+<h5>shift: <span class="tsd-signature-type">boolean</span></h5>
+<div class="tsd-comment tsd-typography"><p>Is shift being pressed?</p>
+</div></li>
+<li>
+<h5>ctrl: <span class="tsd-signature-type">boolean</span></h5>
+<div class="tsd-comment tsd-typography"><p>Is control being pressed?</p>
+</div></li>
+<li>
+<h5>alt: <span class="tsd-signature-type">boolean</span></h5>
+<div class="tsd-comment tsd-typography"><p>Is alt being pressed?</p>
+<p>If null, the last pressing state is used, meaning that the pressing state
+has not changed. Useful if getting pointer movement in an event based
+environment where you only know when a pointer press occurs, but not if
+the pointer is pressed or not</p>
+</div></li></ul></div>
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
+<p>Inherited from RayPointerDriver.movePointer</p>
+<ul>
+<li>Defined in node_modules/@rafern/canvas-ui/lib/drivers/PointerDriver.d.ts:98</li></ul></aside></li></ul></section>
+<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-external"><a id="onDisable" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><span>on<wbr/>Disable</span><a href="#onDisable" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
+<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-external">
+<li class="tsd-signature tsd-anchor-link" id="onDisable.onDisable-1">on<wbr/>Disable<span class="tsd-signature-symbol">(</span>root<span class="tsd-signature-symbol">: </span><a href="https://rafern.github.io/canvas-ui/classes/Root.html" class="tsd-signature-type external" target="_blank">Root</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span><a href="#onDisable.onDisable-1" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></li>
+<li class="tsd-description">
+<div class="tsd-comment tsd-typography"><p>Dispatches a leave event for the disabled root and deletes the state of
+the disabled root from PointerDriver#states.</p>
+</div>
+<div class="tsd-parameters">
+<h4 class="tsd-parameters-title">Parameters</h4>
+<ul class="tsd-parameter-list">
+<li>
+<h5>root: <a href="https://rafern.github.io/canvas-ui/classes/Root.html" class="tsd-signature-type external" target="_blank">Root</a></h5></li></ul></div>
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
+<p>Inherited from RayPointerDriver.onDisable</p>
+<ul>
+<li>Defined in node_modules/@rafern/canvas-ui/lib/drivers/PointerDriver.d.ts:154</li></ul></aside></li></ul></section>
+<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-external"><a id="onEnable" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><span>on<wbr/>Enable</span><a href="#onEnable" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
+<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-external">
+<li class="tsd-signature tsd-anchor-link" id="onEnable.onEnable-1">on<wbr/>Enable<span class="tsd-signature-symbol">(</span>root<span class="tsd-signature-symbol">: </span><a href="https://rafern.github.io/canvas-ui/classes/Root.html" class="tsd-signature-type external" target="_blank">Root</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span><a href="#onEnable.onEnable-1" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></li>
+<li class="tsd-description">
+<div class="tsd-comment tsd-typography"><p>Creates a state for the enabled root in PointerDriver#states.</p>
+</div>
+<div class="tsd-parameters">
+<h4 class="tsd-parameters-title">Parameters</h4>
+<ul class="tsd-parameter-list">
+<li>
+<h5>root: <a href="https://rafern.github.io/canvas-ui/classes/Root.html" class="tsd-signature-type external" target="_blank">Root</a></h5></li></ul></div>
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
+<p>Inherited from RayPointerDriver.onEnable</p>
+<ul>
+<li>Defined in node_modules/@rafern/canvas-ui/lib/drivers/PointerDriver.d.ts:149</li></ul></aside></li></ul></section>
+<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-external"><a id="onFocusCapturerChanged" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><span>on<wbr/>Focus<wbr/>Capturer<wbr/>Changed</span><a href="#onFocusCapturerChanged" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
+<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-external">
+<li class="tsd-signature tsd-anchor-link" id="onFocusCapturerChanged.onFocusCapturerChanged-1">on<wbr/>Focus<wbr/>Capturer<wbr/>Changed<span class="tsd-signature-symbol">(</span>_root<span class="tsd-signature-symbol">: </span><a href="https://rafern.github.io/canvas-ui/classes/Root.html" class="tsd-signature-type external" target="_blank">Root</a>, _focusType<span class="tsd-signature-symbol">: </span><a href="https://rafern.github.io/canvas-ui/enums/FocusType.html" class="tsd-signature-type external" target="_blank">FocusType</a>, _oldCapturer<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><a href="https://rafern.github.io/canvas-ui/classes/Widget.html" class="tsd-signature-type external" target="_blank">Widget</a>, _newCapturer<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><a href="https://rafern.github.io/canvas-ui/classes/Widget.html" class="tsd-signature-type external" target="_blank">Widget</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span><a href="#onFocusCapturerChanged.onFocusCapturerChanged-1" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></li>
+<li class="tsd-description">
+<div class="tsd-parameters">
+<h4 class="tsd-parameters-title">Parameters</h4>
+<ul class="tsd-parameter-list">
+<li>
+<h5>_root: <a href="https://rafern.github.io/canvas-ui/classes/Root.html" class="tsd-signature-type external" target="_blank">Root</a></h5></li>
+<li>
+<h5>_focusType: <a href="https://rafern.github.io/canvas-ui/enums/FocusType.html" class="tsd-signature-type external" target="_blank">FocusType</a></h5></li>
+<li>
+<h5>_oldCapturer: <span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><a href="https://rafern.github.io/canvas-ui/classes/Widget.html" class="tsd-signature-type external" target="_blank">Widget</a></h5></li>
+<li>
+<h5>_newCapturer: <span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><a href="https://rafern.github.io/canvas-ui/classes/Widget.html" class="tsd-signature-type external" target="_blank">Widget</a></h5></li></ul></div>
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
+<p>Inherited from RayPointerDriver.onFocusCapturerChanged</p>
+<ul>
+<li>Defined in node_modules/@rafern/canvas-ui/lib/drivers/PointerDriver.d.ts:161</li></ul></aside></li></ul></section>
+<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-external"><a id="onFocusChanged" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><span>on<wbr/>Focus<wbr/>Changed</span><a href="#onFocusChanged" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
+<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-external">
+<li class="tsd-signature tsd-anchor-link" id="onFocusChanged.onFocusChanged-1">on<wbr/>Focus<wbr/>Changed<span class="tsd-signature-symbol">(</span>_root<span class="tsd-signature-symbol">: </span><a href="https://rafern.github.io/canvas-ui/classes/Root.html" class="tsd-signature-type external" target="_blank">Root</a>, _focusType<span class="tsd-signature-symbol">: </span><a href="https://rafern.github.io/canvas-ui/enums/FocusType.html" class="tsd-signature-type external" target="_blank">FocusType</a>, _newFocus<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><a href="https://rafern.github.io/canvas-ui/classes/Widget.html" class="tsd-signature-type external" target="_blank">Widget</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span><a href="#onFocusChanged.onFocusChanged-1" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></li>
+<li class="tsd-description">
+<div class="tsd-parameters">
+<h4 class="tsd-parameters-title">Parameters</h4>
+<ul class="tsd-parameter-list">
+<li>
+<h5>_root: <a href="https://rafern.github.io/canvas-ui/classes/Root.html" class="tsd-signature-type external" target="_blank">Root</a></h5></li>
+<li>
+<h5>_focusType: <a href="https://rafern.github.io/canvas-ui/enums/FocusType.html" class="tsd-signature-type external" target="_blank">FocusType</a></h5></li>
+<li>
+<h5>_newFocus: <span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><a href="https://rafern.github.io/canvas-ui/classes/Widget.html" class="tsd-signature-type external" target="_blank">Widget</a></h5></li></ul></div>
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
+<p>Inherited from RayPointerDriver.onFocusChanged</p>
+<ul>
+<li>Defined in node_modules/@rafern/canvas-ui/lib/drivers/PointerDriver.d.ts:160</li></ul></aside></li></ul></section>
+<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-external"><a id="registerPointer" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><span>register<wbr/>Pointer</span><a href="#registerPointer" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
+<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-external">
+<li class="tsd-signature tsd-anchor-link" id="registerPointer.registerPointer-1">register<wbr/>Pointer<span class="tsd-signature-symbol">(</span>dragToScroll<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><a href="#registerPointer.registerPointer-1" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></li>
+<li class="tsd-description">
+<div class="tsd-comment tsd-typography"><p>Register a new pointer.</p>
+
+<h3>Returns</h3><p>Returns PointerDriver#nextPointerID and increments it</p>
+</div>
+<div class="tsd-parameters">
+<h4 class="tsd-parameters-title">Parameters</h4>
+<ul class="tsd-parameter-list">
+<li>
+<h5><code class="tsd-tag ts-flagOptional">Optional</code> dragToScroll: <span class="tsd-signature-type">boolean</span></h5>
+<div class="tsd-comment tsd-typography"><p>If true, then dragging will result in PointerWheel events if no widget captures the events.</p>
+</div></li></ul></div>
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4><aside class="tsd-sources">
+<p>Inherited from RayPointerDriver.registerPointer</p>
+<ul>
+<li>Defined in node_modules/@rafern/canvas-ui/lib/drivers/PointerDriver.d.ts:61</li></ul></aside></li></ul></section>
+<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-protected tsd-is-inherited tsd-is-external"><a id="setPointerHint" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagProtected">Protected</code> <span>set<wbr/>Pointer<wbr/>Hint</span><a href="#setPointerHint" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
+<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-protected tsd-is-inherited tsd-is-external">
+<li class="tsd-signature tsd-anchor-link" id="setPointerHint.setPointerHint-1">set<wbr/>Pointer<wbr/>Hint<span class="tsd-signature-symbol">(</span>pointer<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, hint<span class="tsd-signature-symbol">: </span><a href="https://rafern.github.io/canvas-ui/enums/PointerHint.html" class="tsd-signature-type external" target="_blank">PointerHint</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><a href="#setPointerHint.setPointerHint-1" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></li>
+<li class="tsd-description">
+<div class="tsd-parameters">
+<h4 class="tsd-parameters-title">Parameters</h4>
+<ul class="tsd-parameter-list">
+<li>
+<h5>pointer: <span class="tsd-signature-type">number</span></h5></li>
+<li>
+<h5>hint: <a href="https://rafern.github.io/canvas-ui/enums/PointerHint.html" class="tsd-signature-type external" target="_blank">PointerHint</a></h5></li></ul></div>
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4><aside class="tsd-sources">
+<p>Inherited from RayPointerDriver.setPointerHint</p>
+<ul>
+<li>Defined in node_modules/@rafern/canvas-ui/lib/drivers/RayPointerDriver.d.ts:39</li></ul></aside></li></ul></section>
+<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-external"><a id="unregisterPointer" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><span>unregister<wbr/>Pointer</span><a href="#unregisterPointer" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
+<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-external">
+<li class="tsd-signature tsd-anchor-link" id="unregisterPointer.unregisterPointer-1">unregister<wbr/>Pointer<span class="tsd-signature-symbol">(</span>pointer<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span><a href="#unregisterPointer.unregisterPointer-1" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></li>
+<li class="tsd-description">
+<div class="tsd-comment tsd-typography"><p>Unregister a pointer.</p>
+<p>If a root has this pointer bound to it, the pointer is unbound from the
+root, a Leave event is queued to the root and the hovering and pressing
+state of the root is set to false.</p>
+</div>
+<div class="tsd-parameters">
+<h4 class="tsd-parameters-title">Parameters</h4>
+<ul class="tsd-parameter-list">
+<li>
+<h5>pointer: <span class="tsd-signature-type">number</span></h5></li></ul></div>
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
+<p>Inherited from RayPointerDriver.unregisterPointer</p>
+<ul>
+<li>Defined in node_modules/@rafern/canvas-ui/lib/drivers/PointerDriver.d.ts:69</li></ul></aside></li></ul></section>
+<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-external"><a id="update" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><span>update</span><a href="#update" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
+<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-external">
+<li class="tsd-signature tsd-anchor-link" id="update.update-1">update<span class="tsd-signature-symbol">(</span>root<span class="tsd-signature-symbol">: </span><a href="https://rafern.github.io/canvas-ui/classes/Root.html" class="tsd-signature-type external" target="_blank">Root</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span><a href="#update.update-1" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></li>
+<li class="tsd-description">
+<div class="tsd-comment tsd-typography"><p>Dispatches all queued events (found in PointerDriver#states) for
+the root and clears its event queue</p>
+</div>
+<div class="tsd-parameters">
+<h4 class="tsd-parameters-title">Parameters</h4>
+<ul class="tsd-parameter-list">
+<li>
+<h5>root: <a href="https://rafern.github.io/canvas-ui/classes/Root.html" class="tsd-signature-type external" target="_blank">Root</a></h5></li></ul></div>
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
+<p>Inherited from RayPointerDriver.update</p>
+<ul>
+<li>Defined in node_modules/@rafern/canvas-ui/lib/drivers/PointerDriver.d.ts:159</li></ul></aside></li></ul></section>
+<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-external"><a id="wheelPointer" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><span>wheel<wbr/>Pointer</span><a href="#wheelPointer" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
+<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-external">
+<li class="tsd-signature tsd-anchor-link" id="wheelPointer.wheelPointer-1">wheel<wbr/>Pointer<span class="tsd-signature-symbol">(</span>root<span class="tsd-signature-symbol">: </span><a href="https://rafern.github.io/canvas-ui/classes/Root.html" class="tsd-signature-type external" target="_blank">Root</a>, pointer<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, xNorm<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, yNorm<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, deltaX<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, deltaY<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, deltaZ<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, deltaMode<span class="tsd-signature-symbol">: </span><a href="https://rafern.github.io/canvas-ui/enums/PointerWheelMode.html" class="tsd-signature-type external" target="_blank">PointerWheelMode</a>, shift<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span>, ctrl<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span>, alt<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span><a href="#wheelPointer.wheelPointer-1" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></li>
+<li class="tsd-description">
+<div class="tsd-comment tsd-typography"><p>Queue up a mouse wheel event in a given 2D direction. Event will only be
+queued if the root was being hovered.</p>
+</div>
+<div class="tsd-parameters">
+<h4 class="tsd-parameters-title">Parameters</h4>
+<ul class="tsd-parameter-list">
+<li>
+<h5>root: <a href="https://rafern.github.io/canvas-ui/classes/Root.html" class="tsd-signature-type external" target="_blank">Root</a></h5></li>
+<li>
+<h5>pointer: <span class="tsd-signature-type">number</span></h5>
+<div class="tsd-comment tsd-typography"><p>The registered pointer ID</p>
+</div></li>
+<li>
+<h5>xNorm: <span class="tsd-signature-type">number</span></h5>
+<div class="tsd-comment tsd-typography"><p>The normalised (non-integer range from 0 to 1) X coordinate of the pointer event. 0 is the left edge of the root, while 1 is the right edge of the root.</p>
+</div></li>
+<li>
+<h5>yNorm: <span class="tsd-signature-type">number</span></h5>
+<div class="tsd-comment tsd-typography"><p>The normalised (non-integer range from 0 to 1) Y coordinate of the pointer event. 0 is the top edge of the root, while 1 is the bottom edge of the root.</p>
+</div></li>
+<li>
+<h5>deltaX: <span class="tsd-signature-type">number</span></h5>
+<div class="tsd-comment tsd-typography"><p>How much was scrolled horizontally, in pixels</p>
+</div></li>
+<li>
+<h5>deltaY: <span class="tsd-signature-type">number</span></h5>
+<div class="tsd-comment tsd-typography"><p>How much was scrolled vertically, in pixels</p>
+</div></li>
+<li>
+<h5>deltaZ: <span class="tsd-signature-type">number</span></h5>
+<div class="tsd-comment tsd-typography"><p>How much was scrolled in the Z axis, in pixels. Rarely used</p>
+</div></li>
+<li>
+<h5>deltaMode: <a href="https://rafern.github.io/canvas-ui/enums/PointerWheelMode.html" class="tsd-signature-type external" target="_blank">PointerWheelMode</a></h5>
+<div class="tsd-comment tsd-typography"><p>How the delta values should be interpreted</p>
+</div></li>
+<li>
+<h5>shift: <span class="tsd-signature-type">boolean</span></h5>
+<div class="tsd-comment tsd-typography"><p>Is shift being pressed?</p>
+</div></li>
+<li>
+<h5>ctrl: <span class="tsd-signature-type">boolean</span></h5>
+<div class="tsd-comment tsd-typography"><p>Is control being pressed?</p>
+</div></li>
+<li>
+<h5>alt: <span class="tsd-signature-type">boolean</span></h5>
+<div class="tsd-comment tsd-typography"><p>Is alt being pressed?</p>
+</div></li></ul></div>
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
+<p>Inherited from RayPointerDriver.wheelPointer</p>
+<ul>
+<li>Defined in node_modules/@rafern/canvas-ui/lib/drivers/PointerDriver.d.ts:129</li></ul></aside></li></ul></section></section></div>
+<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+<div class="tsd-navigation settings">
+<details class="tsd-index-accordion"><summary class="tsd-accordion-summary">
+<h3><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M4.93896 8.531L12 15.591L19.061 8.531L16.939 6.409L12 11.349L7.06098 6.409L4.93896 8.531Z" fill="var(--color-text)"></path></svg> Settings</h3></summary>
+<div class="tsd-accordion-details">
+<div class="tsd-filter-visibility">
+<h4 class="uppercase">Member Visibility</h4><form>
+<ul id="tsd-filter-options">
+<li class="tsd-filter-item"><label class="tsd-filter-input"><input type="checkbox" id="tsd-filter-protected" name="protected"/><svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true"><rect class="tsd-checkbox-background" width="30" height="30" x="1" y="1" rx="6" fill="none"></rect><path class="tsd-checkbox-checkmark" d="M8.35422 16.8214L13.2143 21.75L24.6458 10.25" stroke="none" stroke-width="3.5" stroke-linejoin="round" fill="none"></path></svg><span>Protected</span></label></li>
+<li class="tsd-filter-item"><label class="tsd-filter-input"><input type="checkbox" id="tsd-filter-private" name="private"/><svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true"><rect class="tsd-checkbox-background" width="30" height="30" x="1" y="1" rx="6" fill="none"></rect><path class="tsd-checkbox-checkmark" d="M8.35422 16.8214L13.2143 21.75L24.6458 10.25" stroke="none" stroke-width="3.5" stroke-linejoin="round" fill="none"></path></svg><span>Private</span></label></li>
+<li class="tsd-filter-item"><label class="tsd-filter-input"><input type="checkbox" id="tsd-filter-inherited" name="inherited" checked/><svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true"><rect class="tsd-checkbox-background" width="30" height="30" x="1" y="1" rx="6" fill="none"></rect><path class="tsd-checkbox-checkmark" d="M8.35422 16.8214L13.2143 21.75L24.6458 10.25" stroke="none" stroke-width="3.5" stroke-linejoin="round" fill="none"></path></svg><span>Inherited</span></label></li>
+<li class="tsd-filter-item"><label class="tsd-filter-input"><input type="checkbox" id="tsd-filter-external" name="external"/><svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true"><rect class="tsd-checkbox-background" width="30" height="30" x="1" y="1" rx="6" fill="none"></rect><path class="tsd-checkbox-checkmark" d="M8.35422 16.8214L13.2143 21.75L24.6458 10.25" stroke="none" stroke-width="3.5" stroke-linejoin="round" fill="none"></path></svg><span>External</span></label></li></ul></form></div>
+<div class="tsd-theme-toggle">
+<h4 class="uppercase">Theme</h4><select id="theme"><option value="os">OS</option><option value="light">Light</option><option value="dark">Dark</option></select></div></div></details></div>
+<nav class="tsd-navigation primary">
+<details class="tsd-index-accordion" open><summary class="tsd-accordion-summary">
+<h3><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M4.93896 8.531L12 15.591L19.061 8.531L16.939 6.409L12 11.349L7.06098 6.409L4.93896 8.531Z" fill="var(--color-text)"></path></svg> Modules</h3></summary>
+<div class="tsd-accordion-details">
+<ul>
+<li><a href="../modules.html">@rafern/canvas-<wbr/>ui-<wbr/>three</a>
+<ul></ul></li></ul></div></details></nav>
+<nav class="tsd-navigation secondary menu-sticky">
+<ul>
+<li class="current tsd-kind-class"><a href="ThreeRayPointerDriver.html" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><rect fill="var(--color-icon-background)" stroke="var(--color-ts-class)" stroke-width="1.5" x="1" y="1" width="22" height="22" rx="6" id="icon-128-path"></rect><path d="M11.898 16.1201C11.098 16.1201 10.466 15.8961 10.002 15.4481C9.53803 15.0001 9.30603 14.3841 9.30603 13.6001V9.64012C9.30603 8.85612 9.53803 8.24012 10.002 7.79212C10.466 7.34412 11.098 7.12012 11.898 7.12012C12.682 7.12012 13.306 7.34812 13.77 7.80412C14.234 8.25212 14.466 8.86412 14.466 9.64012H13.386C13.386 9.14412 13.254 8.76412 12.99 8.50012C12.734 8.22812 12.37 8.09212 11.898 8.09212C11.426 8.09212 11.054 8.22412 10.782 8.48812C10.518 8.75212 10.386 9.13212 10.386 9.62812V13.6001C10.386 14.0961 10.518 14.4801 10.782 14.7521C11.054 15.0161 11.426 15.1481 11.898 15.1481C12.37 15.1481 12.734 15.0161 12.99 14.7521C13.254 14.4801 13.386 14.0961 13.386 13.6001H14.466C14.466 14.3761 14.234 14.9921 13.77 15.4481C13.306 15.8961 12.682 16.1201 11.898 16.1201Z" fill="var(--color-text)" id="icon-128-text"></path></svg><span>Three<wbr/>Ray<wbr/>Pointer<wbr/>Driver</span></a>
+<ul>
+<li class="tsd-kind-constructor tsd-parent-kind-class"><a href="ThreeRayPointerDriver.html#constructor" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-512-path"></use><use href="#icon-512-text"></use></svg>constructor</a></li>
+<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected tsd-is-inherited tsd-is-external"><a href="ThreeRayPointerDriver.html#hints" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg>hints</a></li>
+<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="ThreeRayPointerDriver.html#raycaster" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg>raycaster</a></li>
+<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected tsd-is-inherited tsd-is-external"><a href="ThreeRayPointerDriver.html#sources" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg>sources</a></li>
+<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected tsd-is-inherited tsd-is-external"><a href="ThreeRayPointerDriver.html#states" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg>states</a></li>
+<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-external"><a href="ThreeRayPointerDriver.html#addSource" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-2048-path"></use><use href="#icon-2048-text"></use></svg>add<wbr/>Source</a></li>
+<li class="tsd-kind-method tsd-parent-kind-class"><a href="ThreeRayPointerDriver.html#castRay" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-2048-path"></use><use href="#icon-2048-text"></use></svg>cast<wbr/>Ray</a></li>
+<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-external"><a href="ThreeRayPointerDriver.html#getPointerHint" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-2048-path"></use><use href="#icon-2048-text"></use></svg>get<wbr/>Pointer<wbr/>Hint</a></li>
+<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-external"><a href="ThreeRayPointerDriver.html#handlePointerRay" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-2048-path"></use><use href="#icon-2048-text"></use></svg>handle<wbr/>Pointer<wbr/>Ray</a></li>
+<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-external"><a href="ThreeRayPointerDriver.html#leaveAnyPointer" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-2048-path"></use><use href="#icon-2048-text"></use></svg>leave<wbr/>Any<wbr/>Pointer</a></li>
+<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-external"><a href="ThreeRayPointerDriver.html#leavePointer" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-2048-path"></use><use href="#icon-2048-text"></use></svg>leave<wbr/>Pointer</a></li>
+<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-external"><a href="ThreeRayPointerDriver.html#movePointer" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-2048-path"></use><use href="#icon-2048-text"></use></svg>move<wbr/>Pointer</a></li>
+<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-external"><a href="ThreeRayPointerDriver.html#onDisable" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-2048-path"></use><use href="#icon-2048-text"></use></svg>on<wbr/>Disable</a></li>
+<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-external"><a href="ThreeRayPointerDriver.html#onEnable" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-2048-path"></use><use href="#icon-2048-text"></use></svg>on<wbr/>Enable</a></li>
+<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-external"><a href="ThreeRayPointerDriver.html#onFocusCapturerChanged" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-2048-path"></use><use href="#icon-2048-text"></use></svg>on<wbr/>Focus<wbr/>Capturer<wbr/>Changed</a></li>
+<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-external"><a href="ThreeRayPointerDriver.html#onFocusChanged" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-2048-path"></use><use href="#icon-2048-text"></use></svg>on<wbr/>Focus<wbr/>Changed</a></li>
+<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-external"><a href="ThreeRayPointerDriver.html#registerPointer" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-2048-path"></use><use href="#icon-2048-text"></use></svg>register<wbr/>Pointer</a></li>
+<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected tsd-is-inherited tsd-is-external"><a href="ThreeRayPointerDriver.html#setPointerHint" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-2048-path"></use><use href="#icon-2048-text"></use></svg>set<wbr/>Pointer<wbr/>Hint</a></li>
+<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-external"><a href="ThreeRayPointerDriver.html#unregisterPointer" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-2048-path"></use><use href="#icon-2048-text"></use></svg>unregister<wbr/>Pointer</a></li>
+<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-external"><a href="ThreeRayPointerDriver.html#update" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-2048-path"></use><use href="#icon-2048-text"></use></svg>update</a></li>
+<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-external"><a href="ThreeRayPointerDriver.html#wheelPointer" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-2048-path"></use><use href="#icon-2048-text"></use></svg>wheel<wbr/>Pointer</a></li></ul></li></ul></nav></div></div>
 <div class="container tsd-generator">
-	<p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p>
-</div>
-<div class="overlay"></div>
-<script src="../assets/js/main.js"></script>
-</body>
-</html>
+<p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p></div>
+<div class="overlay"></div><script src="../assets/main.js"></script></body></html>
