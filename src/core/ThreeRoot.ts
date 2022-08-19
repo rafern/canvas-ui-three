@@ -42,7 +42,7 @@ export class ThreeRoot extends Root {
      * An object that contains the canvas' mesh which can be added to a scene.
      * Not actually a Mesh, but an Object3D which contains a mesh, so that the
      * mesh can be resized without interfering with the
-     * {@link transformAlgorithm}.
+     * {@link ThreeRoot#transformAlgorithm}.
      */
     readonly object: Object3D;
     /**
@@ -54,9 +54,9 @@ export class ThreeRoot extends Root {
     /**
      * Creates a new ThreeRoot.
      *
-     * Sets {@link child}, {@link pointerStyleHandler},
-     * {@link transformAlgorithm} and {@link child}'s
-     * {@link Widget.inheritedTheme | inherited theme}.
+     * Sets {@link Root#child}, {@link Root#pointerStyleHandler},
+     * {@link ThreeRoot#transformAlgorithm} and {@link Root#child}'s
+     * {@link Widget#inheritedTheme | inherited theme}.
      */
     constructor(child: Widget, properties?: ThreeRootProperties) {
         super(child, properties);
