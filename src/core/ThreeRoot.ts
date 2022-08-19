@@ -99,6 +99,8 @@ export class ThreeRoot extends Root {
             if(oldCanvasWidth !== canvasWidth || oldCanvasHeight !== canvasHeight) {
                 this.texture.dispose();
                 this.texture = new CanvasTexture(this.viewport.canvas);
+                this.meshMaterial.map = this.texture;
+                this.meshMaterial.needsUpdate = true;
             }
 
             const [width, height] = this.dimensions;
