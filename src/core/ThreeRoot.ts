@@ -23,14 +23,28 @@ export interface ThreeRootProperties extends RootProperties {
  * @category Core
  */
 export class ThreeRoot extends Root {
-    /** The texture with the canvas data. */
+    /**
+     * The texture with the canvas data. Will re replaced with a new texture
+     * instance when the canvas dimensions (not layout) change.
+     */
     private texture: CanvasTexture;
     /**
-     * The textured Mesh to be used for a Scene. Not actually a Mesh, but an
-     * Object3D which contains a mesh so that the mesh can be resized without
-     * interfering with the {@link transformAlgorithm}.
+     * The material used for the mesh. Saved so that its texture can be changed
+     * later.
      */
-    readonly mesh: Object3D;
+    private meshMaterial: MeshBasicMaterial;
+    /**
+     * The mesh used for rendering the canvas. Saved so that its scale can be
+     * changed later.
+     */
+    private mesh: Mesh;
+    /**
+     * An object that contains the canvas' mesh which can be added to a scene.
+     * Not actually a Mesh, but an Object3D which contains a mesh, so that the
+     * mesh can be resized without interfering with the
+     * {@link transformAlgorithm}.
+     */
+    readonly object: Object3D;
     /**
      * Transform algorithm; decides how to position the canvas' mesh in the
      * world. Can be changed later and is called on update.
@@ -52,13 +66,13 @@ export class ThreeRoot extends Root {
 
         // Create a planar mesh out of internal canvas
         const meshGeometry = new PlaneGeometry();
-        const meshMaterial = new MeshBasicMaterial({ map: this.texture });
-        meshMaterial.transparent = true;
-        const internalMesh = new Mesh(meshGeometry, meshMaterial);
+        this.meshMaterial = new MeshBasicMaterial({ map: this.texture });
+        this.meshMaterial.transparent = true;
+        this.mesh = new Mesh(meshGeometry, this.meshMaterial);
 
         // Wrap mesh in Object3D so it can be transformed independently
-        this.mesh = new Object3D();
-        this.mesh.add(internalMesh);
+        this.object = new Object3D();
+        this.object.add(this.mesh);
 
         // Transforms algorithm
         this.transformAlgorithm = properties?.transformAlgorithm ?? null;
@@ -66,7 +80,7 @@ export class ThreeRoot extends Root {
 
     override set enabled(enabled: boolean) {
         super.enabled = enabled;
-        this.mesh.visible = enabled;
+        this.object.visible = enabled;
     }
 
     override get enabled(): boolean {
@@ -74,22 +88,27 @@ export class ThreeRoot extends Root {
     }
 
     override resolveLayout(): boolean {
+        const [oldCanvasWidth, oldCanvasHeight] = this.canvasDimensions;
+
         const resized = super.resolveLayout();
 
         // Resize mesh and texture if needed
         if(resized) {
-            let [width, height] = this.dimensions;
-            // Round width and height down to avoid blurry canvas textures
-            width = Math.floor(width);
-            height = Math.floor(height);
             const [canvasWidth, canvasHeight] = this.canvasDimensions;
+
+            if(oldCanvasWidth !== canvasWidth || oldCanvasHeight !== canvasHeight) {
+                this.texture.dispose();
+                this.texture = new CanvasTexture(this.viewport.canvas);
+            }
+
+            const [width, height] = this.dimensions;
             const [scaleX, scaleY] = this.effectiveScale;
             const u = scaleX * width / canvasWidth;
             const v = scaleY * height / canvasHeight;
             this.texture.offset = new Vector2(0, 1 - v);
             this.texture.repeat = new Vector2(u, v);
 
-            this.mesh.children[0].scale.fromArray([width, height, 1]);
+            this.mesh.scale.fromArray([width, height, 1]);
         }
 
         return resized;
@@ -107,9 +126,25 @@ export class ThreeRoot extends Root {
             this.transformAlgorithm(this);
 
             // Update mesh world matrix
-            this.mesh.matrixWorldNeedsUpdate = true;
+            this.object.matrixWorldNeedsUpdate = true;
         }
 
         return wasDirty;
+    }
+
+    /**
+     * {@inheritDoc Root#destroy}
+     *
+     * It's the user's responsibility that the {@link ThreeRoot#object} is
+     * removed from all scenes. canvas-ui-three has no knowledge about the
+     * available scenes.
+     */
+    override destroy() {
+        super.destroy();
+
+        this.object.remove(this.mesh);
+        this.meshMaterial.dispose();
+        this.mesh.geometry.dispose();
+        this.texture.dispose();
     }
 }
