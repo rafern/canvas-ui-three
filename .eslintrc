@@ -2,7 +2,8 @@
   "root": true,
   "parser": "@typescript-eslint/parser",
   "plugins": [
-    "@typescript-eslint",
+    "@typescript-eslint/eslint-plugin",
+    "eslint-plugin-tsdoc",
     "tree-shaking"
   ],
   "extends": [
@@ -13,7 +14,8 @@
   "rules": {
     "@typescript-eslint/no-unused-vars": ["warn", { "argsIgnorePattern": "^_", "varsIgnorePattern": "^_" }],
     "tree-shaking/no-side-effects-in-initialization": 2,
-    "@typescript-eslint/no-shadow": ["error"]
+    "@typescript-eslint/no-shadow": ["error"],
+    "tsdoc/syntax": "warn"
   }
 }
 
