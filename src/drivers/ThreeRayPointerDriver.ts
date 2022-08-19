@@ -22,7 +22,7 @@ export class ThreeRayPointerDriver extends RayPointerDriver {
         for(const root of this.states.keys()) {
             // Ignore roots that are not ThreeRoots; we need their meshes
             if(root instanceof ThreeRoot)
-                meshRoots.set(root.mesh.children[0], root);
+                meshRoots.set(root.mesh, root);
         }
 
         const meshes = Array.from(meshRoots.keys());

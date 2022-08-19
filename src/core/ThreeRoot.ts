@@ -37,7 +37,7 @@ export class ThreeRoot extends Root {
      * The mesh used for rendering the canvas. Saved so that its scale can be
      * changed later.
      */
-    private mesh: Mesh;
+    readonly mesh: Mesh;
     /**
      * An object that contains the canvas' mesh which can be added to a scene.
      * Not actually a Mesh, but an Object3D which contains a mesh, so that the
@@ -133,11 +133,13 @@ export class ThreeRoot extends Root {
     }
 
     /**
-     * {@inheritDoc Root#destroy}
+     * Cleans up resources used by the Root.
      *
      * It's the user's responsibility that the {@link ThreeRoot#object} is
      * removed from all scenes. canvas-ui-three has no knowledge about the
      * available scenes.
+     *
+     * @see the {@link Root#destroy} documentation for more details
      */
     override destroy() {
         super.destroy();
