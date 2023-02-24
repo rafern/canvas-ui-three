@@ -1,3 +1,7 @@
+# WARNING
+
+This library has been renamed to `lazy-widgets` due to a name clash. The new library can be found [here](https://github.com/rafern/lazy-widgets).
+
 # canvas-ui-three
 
 [three.js](https://github.com/mrdoob/three.js) integration for the
